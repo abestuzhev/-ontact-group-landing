@@ -15,19 +15,77 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="dist/normalize.css">
+  <link rel="stylesheet" href="dist/base.css">
+  <link rel="stylesheet" href="dist/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+<div class="wrapper">
+  <header class="header">
+    <div class="layout">
+      <div class="header-logo"></div>
+      <div class="header-menu">
+        <a href="#" class="header-menu__link">Кейсы</a>
+        <a href="#" class="header-menu__link">Расчет эффективности</a>
+        <a href="#" class="header-menu__link">Цены</a>
+        <a href="#" class="header-menu__link">Аудит</a>
+        <a href="#" class="header-menu__link">Услуги</a>
+        <a href="#" class="header-menu__link">О нас</a>
+      </div>
+      <div class="header-info"></div>
+    </div>
+  </header>
+  <section class="c-section section-banner">
+    <div class="layout">
+      <div class="banner-top">
+        <div class="banner-top__head">
+          <div class="banner-top__title">Эфективное продвижение интернет-магазинов</div>
+          <div class="banner-top__text">Научим ваш сайт продавать много</div>
+          <a href="#" class="c-btn c-btn-big">получить консультацию</a>
+        </div>
+        <div class="banner-top__body">
+        <!--START banner-top-advantages-->
+          <div class="banner-top-advantages">
+            <div class="banner-top-advantages__item">
+              <div class="banner-top-advantages-card">
+                <div class="banner-top-advantages-card__label">1</div>
+                <div class="banner-top-advantages-card__text">Все условия зафиксированы в договоре</div>
+              </div>
+            </div>
+            <div class="banner-top-advantages__item">
+              <div class="banner-top-advantages-card">
+                <div class="banner-top-advantages-card__label">2</div>
+                <div class="banner-top-advantages-card__text">Оплата за реальные результаты</div>
+              </div>
+            </div>
+            <div class="banner-top-advantages__item">
+              <div class="banner-top-advantages-card">
+                <div class="banner-top-advantages-card__label">3</div>
+                <div class="banner-top-advantages-card__text">Проверенные методы работы</div>
+              </div>
+            </div>
+          </div>
+          <!--END banner-top-advantages-->
+        </div>
 
-  <!-- Add your site or application content here -->
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+      </div>
+    </div>
+  </section>
+  <div class="layout"></div>
+
+</div>
+
+<!-- Add your site or application content here -->
+<script src="src/js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="src/js/vendor/jquery-3.5.1.min.js"></script>
+<script src="src/js/plugins.js"></script>
+<script src="src/js/main.js"></script>
 
 
 </body>

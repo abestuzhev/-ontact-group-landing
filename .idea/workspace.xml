@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e5983e-cb4c-4596-914c-9069bab346cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/g.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/modernizr-3.11.2.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/vendor/modernizr-3.11.2.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +38,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.13.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\code\contact-group-landing\dist" />
+      <recent name="F:\code\contact-group-landing\src" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,11 +60,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603301777106</updated>
-      <workItem from="1603301779409" duration="1265000" />
+      <workItem from="1603301779409" duration="2763000" />
+      <workItem from="1603386318274" duration="83000" />
+      <workItem from="1603388305836" duration="7759000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="771" y="295" key="FileChooserDialogImpl" timestamp="1603386399719">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="771" y="295" key="FileChooserDialogImpl/62.0.1858.1080@62.0.1858.1080" timestamp="1603386399719" />
   </component>
 </project>

@@ -1,0 +1,115 @@
+.c-btn {
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 100px;
+  display: inline-block;
+  background: -o-linear-gradient(0.3deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+  background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%); }
+  .c-btn-default {
+    font-size: 14px;
+    padding: 10px 30px; }
+  .c-btn-big {
+    padding: 23px 30px;
+    -webkit-box-shadow: 10px 9px 20px rgba(9, 126, 216, 0.22);
+            box-shadow: 10px 9px 20px rgba(9, 126, 216, 0.22); }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+a[href^=tel] {
+  color: #4D5264; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px; }
+
+.layout {
+  max-width: 100%;
+  padding: 0 80px; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 35px 0;
+  margin-bottom: 22px; }
+  .header-menu__link {
+    padding: 0 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9BA0B4;
+    text-decoration: none;
+    -webkit-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    transition: all .1s ease-in-out; }
+    .header-menu__link:hover {
+      -webkit-transition: all .1s ease-in-out;
+      -o-transition: all .1s ease-in-out;
+      transition: all .1s ease-in-out;
+      color: #4D5264; }
+
+.banner-top {
+  padding: 70px 100px 152px;
+  background: url("../src/img/banner-top.jpg") 0 0 no-repeat;
+  background-size: cover; }
+  .banner-top__title {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    color: #4D5264;
+    margin-bottom: 13px; }
+  .banner-top__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 23px; }
+  .banner-top__head {
+    margin-bottom: 140px; }
+  .banner-top-advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .banner-top-advantages-card__label {
+      margin-bottom: 20px; }
+    .banner-top-advantages-card__text {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4D5264; }
+    .banner-top-advantages__item {
+      max-width: 220px;
+      width: 33.33%;
+      margin-right: 83px;
+      text-align: center; }
+      .banner-top-advantages__item:last-child {
+        margin-right: 0; }

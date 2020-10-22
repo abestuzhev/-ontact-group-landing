@@ -1,0 +1,150 @@
+$black: #4D5264;
+
+@mixin clear-link {
+  text-decoration: none;
+}
+
+@mixin animation {
+  transition: all .1s ease-in-out;
+}
+
+
+.c-btn {
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  @include clear-link();
+  color: #fff;
+  border-radius: 100px;
+  display: inline-block;
+  background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+
+  &-default {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+
+  &-big {
+    padding: 23px 30px;
+    box-shadow: 10px 9px 20px rgba(9, 126, 216, 0.22);
+  }
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+a[href^=tel] {
+  color: $black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0px;
+}
+
+.layout {
+  max-width: 100%;
+  padding: 0 80px;
+}
+
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 35px 0;
+  margin-bottom: 22px;
+
+  &-logo {
+
+  }
+
+  &-menu {
+    &__link {
+      padding: 0 25px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9BA0B4;
+      @include clear-link();
+      @include animation();
+
+      &:hover {
+        @include animation();
+        color: $black;
+      }
+    }
+  }
+
+  &-info {
+
+  }
+
+}
+
+.banner-top {
+  padding: 70px 100px 152px;
+  background: url('../src/img/banner-top.jpg') 0 0 no-repeat;
+  background-size: cover;
+
+  &__title {
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 52px;
+    color: $black;
+    margin-bottom: 13px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 23px;
+  }
+
+  &__head {
+    margin-bottom: 140px;
+  }
+
+  &-advantages {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-card {
+
+      &__label {
+        margin-bottom: 20px;
+      }
+
+      &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $black;
+      }
+
+    }
+
+    &__item {
+      max-width: 220px;
+      width: 33.33%;
+      margin-right: 83px;
+      text-align: center;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
