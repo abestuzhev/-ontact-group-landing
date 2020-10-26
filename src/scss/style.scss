@@ -33,6 +33,33 @@ input, textarea {
   border-radius: 0px;
 }
 
+@media all and (-ms-high-contrast:none){
+  .service-card__title {
+    color: #36F298;
+    background: none !important;
+  } /* IE10 */
+  *::-ms-backdrop, .service-card__title {
+    color: #36F298;
+    background: none !important;
+  } /* IE11 */
+
+  .section-cost .cost-plane--standart .cost-plane__title {
+    color: #36F298;
+    background: none !important;
+  }
+
+  .section-cost .cost-plane--business .cost-plane__title {
+    color: #0D81D8;
+    background: none !important;
+  }
+
+  .section-cost .cost-plane--maximum .cost-plane__title {
+    color: #DB40A2;
+    background: none !important;
+  }
+
+}
+
 .layout {
   max-width: 100%;
   padding: 0 80px;
@@ -326,6 +353,50 @@ input, textarea {
           color: $black;
         }
       }
+
+      &__hamburger {
+        display: none;
+        width: 22px;
+        height: 16px;
+        position: relative;
+        cursor: pointer;
+        margin-left: 20px;
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          display: block;
+          width: 100%;
+          height: 2px;
+          border-radius: 2px;
+          background-color: $grey;
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $grey;
+
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 100%;
+            height: 2px;
+            background-color: $grey;
+
+          }
+        }
+
+      }
     }
 
     &-info {
@@ -386,7 +457,7 @@ input, textarea {
 .banner {
   &-top {
     padding: 70px 100px 152px;
-    background: url('../src/img/banner-top.jpg') 0 0 no-repeat;
+    background: url('../src/img/banner-top.jpg') 50% 0 no-repeat;
     background-size: cover;
     margin-bottom: 24px;
 
@@ -454,6 +525,42 @@ input, textarea {
     &__item {
 
     }
+  }
+
+  &-arrow {
+    margin-top: 62px;
+
+    &__icon {
+      margin: 0 auto;
+      position: relative;
+      width: 20px;
+      height: 10px;
+      cursor: pointer;
+      padding: 10px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 4px;
+        right: 0;
+        width: 12px;
+        height: 1px;
+        transform: rotate(-45deg);
+        background: $black;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 12px;
+        height: 1px;
+        transform: rotate(45deg);
+        background: $black;
+      }
+    }
+
   }
 
 
@@ -1208,7 +1315,6 @@ input, textarea {
     &-form {
       margin-right: 90px;
       max-width: 500px;
-      height: 100%;
       background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
       box-shadow: 10px 9px 40px rgba(0, 0, 0, 0.1);
       padding: 71px 84px 54px;
@@ -1272,12 +1378,32 @@ input, textarea {
     }
 
     &-link {
+      position: relative;
+      @include clear-link;
+      font-family: Roboto;
       color: $grey;
       display: block;
       font-weight: normal;
       font-size: 13px;
       line-height: 18px;
-      padding: 35px;
+      padding: 35px 85px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50px;
+        background-color: $black;
+      }
+
+      &:last-child::after {
+        content: '';
+        display: none;
+      }
 
       &.active {
         color: $black;
@@ -1611,8 +1737,7 @@ input, textarea {
 
           .team-row-item__box {
             padding-bottom: 30px;
-            flex: 1 0 auto;
-            max-height: 340px;
+            flex: 1 0 340px;
 
             &:last-child {
               padding-bottom: 0;
@@ -1688,3 +1813,5 @@ input, textarea {
     }
   }
 }
+
+@import "media";
