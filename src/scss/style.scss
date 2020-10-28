@@ -523,6 +523,7 @@ input, textarea {
     align-items: center;
 
     &__item {
+      margin-bottom: 10px;
 
     }
   }
@@ -944,6 +945,7 @@ input, textarea {
         letter-spacing: 0.05em;
         text-transform: uppercase;
         color: $black;
+        white-space: nowrap;
 
         span {
           font-style: normal;

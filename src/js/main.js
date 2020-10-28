@@ -6,6 +6,7 @@ const resultsSlider = new Swiper('.results .swiper-container', {
 
   pagination: {
     el: '.swiper-pagination',
+    type: 'fraction',
   },
 
   navigation: {
@@ -25,6 +26,7 @@ const failSlider = new Swiper('.fail .swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
     clickable: true,
+
   },
 
 });

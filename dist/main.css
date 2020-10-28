@@ -438,6 +438,8 @@ input, textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .banner-brand__item {
+    margin-bottom: 10px; }
 
 .banner-arrow {
   margin-top: 62px; }
@@ -766,7 +768,8 @@ input, textarea {
         line-height: 33px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        color: #4D5264; }
+        color: #4D5264;
+        white-space: nowrap; }
         .section-cost .cost-plane__price span {
           font-style: normal;
           font-weight: bold;
@@ -1513,7 +1516,31 @@ input, textarea {
       padding: 18px;
       -webkit-box-flex: 0;
           -ms-flex: 0 1 40%;
-              flex: 0 1 40%; } }
+              flex: 0 1 40%; }
+  .banner-brand {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .banner-brand__item img {
+      width: 80%; }
+  .banner-top-advantages__item {
+    margin-right: 0; }
+  .section-team .team-row {
+    display: block; }
+    .section-team .team-row-item {
+      width: 100%;
+      padding: 0 !important; }
+  .section-team .team-card {
+    height: 320px; }
+  .section-efficiency .efficiency-form {
+    top: 140px;
+    margin-left: -20%; }
+    .section-efficiency .efficiency-form__title {
+      letter-spacing: 0.15em;
+      right: 100px;
+      width: 80%; }
+  .section-efficiency .efficiency-step {
+    margin-left: 17%; } }
 
 /****************************/
 /****************************/
@@ -1521,6 +1548,17 @@ input, textarea {
 @media screen and (max-width: 1400px) {
   .layout {
     padding: 0 40px; }
+  .banner-top {
+    padding: 70px 70px 100px;
+    background-position: 70% 0; }
+    .banner-top__title {
+      font-size: 30px;
+      line-height: 30px; }
+    .banner-top__head {
+      width: 70%; }
+  .section-title {
+    font-size: 30px;
+    line-height: 30px; }
   .swiper-button-next::after,
   .swiper-button-prev::after {
     font-size: 30px; }
@@ -1542,12 +1580,70 @@ input, textarea {
       line-height: 30px; }
     .section-results .results-card-list li {
       font-size: 15px;
-      line-height: 15px; } }
+      line-height: 15px; }
+  .section-cost .cost {
+    margin: 0;
+    padding: 20px 0; }
+    .section-cost .cost-plane-gift__icon {
+      display: none; }
+    .section-cost .cost-item {
+      padding: 0 4px; }
+  .fail-bigtitle {
+    display: none; }
+  .section-number .number {
+    margin: 40px 0; }
+    .section-number .number-grid {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .section-number .number-card__bg {
+      width: 80%; }
+    .section-number .number-card-label {
+      margin: 0 auto 20px; }
+      .section-number .number-card-label__figure {
+        width: 100%; }
+  .section-efficiency .efficiency-form {
+    margin-left: -23%; }
+  .section-efficiency .efficiency-step {
+    margin-left: 20%; } }
 
 /****************************/
 /****************************/
 /****************************/
 @media screen and (max-width: 1200px) {
+  .c-section {
+    padding: 0 0 60px; }
+  .banner-top {
+    padding: 50px; }
+    .banner-top__head {
+      margin-bottom: 40px; }
+    .banner-top-advantages {
+      display: block; }
+      .banner-top-advantages__item {
+        max-width: 100%;
+        margin-bottom: 20px;
+        width: 100%; }
+      .banner-top-advantages-card {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .banner-top-advantages-card__label {
+          -webkit-box-flex: 0;
+              -ms-flex: 0 1 41px;
+                  flex: 0 1 41px;
+          margin: 0 14px 0 0; }
+        .banner-top-advantages-card__text {
+          text-align: left; }
   .section-audit .audit-body {
     padding: 60px; }
   .section-audit .audit-form {
@@ -1561,7 +1657,54 @@ input, textarea {
   .section-results .results-card__body {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 70%;
-            flex: 0 1 70%; } }
+            flex: 0 1 70%; }
+  .section-cost .cost-plane__head {
+    padding: 16px 18px; }
+  .section-cost .cost-plane__title, .section-cost .cost-plane__price {
+    font-size: 20px;
+    line-height: 21px; }
+  .section-cost .cost-plane__body {
+    padding: 0 18px 24px; }
+  .section-number .number {
+    margin: 40px 0; }
+    .section-number .number-grid {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+    .section-number .number-card__title {
+      font-size: 18px;
+      line-height: 24px; }
+    .section-number .number-card-label {
+      margin: 0 auto;
+      width: 250px;
+      height: 250px; }
+      .section-number .number-card-label__num {
+        font-size: 48px;
+        line-height: 48px; }
+  .section-efficiency .efficiency-form {
+    margin-left: -100px; }
+    .section-efficiency .efficiency-form-card {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .section-efficiency .efficiency-step {
+    display: none; }
+  .section-efficiency .efficiency-schema {
+    width: 465px;
+    position: relative;
+    left: 40%; }
+    .section-efficiency .efficiency-schema__text h4 {
+      margin: 0; }
+    .section-efficiency .efficiency-schema__text span {
+      display: block; }
+    .section-efficiency .efficiency-schema__text:nth-child(1) {
+      top: 3%; }
+    .section-efficiency .efficiency-schema__text:nth-child(2) {
+      top: 31%; }
+    .section-efficiency .efficiency-schema__text:nth-child(3) {
+      top: 58%; }
+    .section-efficiency .efficiency-schema__text:nth-child(4) {
+      top: 85%; } }
 
 /****************************/
 /****************************/
@@ -1578,6 +1721,9 @@ input, textarea {
       max-width: 100%; }
     .section-audit .audit-sale {
       margin-right: 15px; }
+  .section-results .results .swiper-button-next,
+  .section-results .results .swiper-button-prev {
+    top: 25%; }
   .section-results .results-card {
     padding: 0;
     -webkit-box-orient: vertical;
@@ -1595,18 +1741,57 @@ input, textarea {
     .section-results .results-card__img {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
-              order: 1; } }
+              order: 1; }
+  .section-cost .cost {
+    display: block; }
+    .section-cost .cost-item {
+      width: 100%;
+      margin-bottom: 20px; }
+  .section-number .number-col {
+    width: 50%; }
+  .section-number .number-card__bg {
+    width: 70%; } }
 
 /****************************/
 /****************************/
 /****************************/
 @media screen and (max-width: 900px) {
   .layout {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .banner-top {
+    padding: 50px;
+    background-position: 57% 0; } }
 
+/****************************/
+/****************************/
+/****************************/
 /****************************/
 /****************************/
 /****************************/
 @media screen and (max-width: 780px) {
   .layout {
-    padding: 0 18px; } }
+    padding: 0 18px; }
+  .section-number .number-col {
+    width: 50%; }
+  .section-number .number-card__bg {
+    width: 70%; }
+  .section-number .number-card__title {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 20px; }
+  .section-number .number-card-label {
+    width: 200px;
+    height: 200px; }
+    .section-number .number-card-label__num {
+      font-size: 40px;
+      line-height: 40px; }
+    .section-number .number-card-label__text {
+      font-size: 14px;
+      line-height: 14px; } }
+
+/****************************/
+/****************************/
+/****************************/
+@media screen and (max-width: 580px) {
+  .layout {
+    padding: 0 10px; } }
