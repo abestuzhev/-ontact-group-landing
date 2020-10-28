@@ -19,11 +19,19 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/normalize.css">
   <link rel="stylesheet" href="dist/base.css">
   <link rel="stylesheet" href="dist/main.css">
   <link rel="stylesheet" href="dist/media.css">
+
+
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -131,62 +139,130 @@
       <div class="section-title">Результаты наших клиентов</div>
       <div class="section-subtitle">Здесь может быть и ваш сайт!</div>
       <div class="results">
-        <div class="results-slider">
-          <div class="results-slider__item">
-            <div class="results-card">
-              <div class="results-card__body">
-                <div class="results-card__schema">
-                  <div class="c-schema c-schema--pink">
-                    <div class="c-schema__title">Посещаемость (человек в месяц)</div>
-                    <div class="c-schema__wrapper">
-                      <div class="c-schema__grid">
-                        <div class="c-schema__col">
-                          <div class="c-schema__data">
-<!--                            <div class="c-schema__res">5 258</div>-->
-                            <span style="height: 20%"></span>
-                          </div>
-                          <div class="c-schema__name">Февраль</div>
 
-                        </div>
-                        <div class="c-schema__col">
-                          <div class="c-schema__data"><span style="height: 30%"></span></div>
-                          <div class="c-schema__name">Март</div>
-                        </div>
-                        <div class="c-schema__col">
-                          <div class="c-schema__data"><span style="height: 40%"></span></div>
-                          <div class="c-schema__name">Апрель</div>
-                        </div>
-                        <div class="c-schema__col">
-                          <div class="c-schema__data"><span style="height: 80%"></span></div>
-                          <div class="c-schema__name">Май</div>
-                        </div>
-                        <div class="c-schema__col">
-                          <div class="c-schema__data"><span style="height: 60%"></span></div>
-                          <div class="c-schema__name">Июнь</div>
-                        </div>
-                        <div class="c-schema__col">
-                          <div class="c-schema__data"><span style="height: 55%"></span></div>
-                          <div class="c-schema__name">Июль</div>
-<!--                          <div class="c-schema__res">10 250</div>-->
+        <div class="swiper-container">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper results-slider">
+            <!-- Slides -->
+            <div class="swiper-slide results-slider__item">
+              <div class="results-card">
+                <div class="results-card__body">
+                  <div class="results-card__schema">
+                    <div class="c-schema c-schema--pink">
+                      <div class="c-schema__title">Посещаемость (человек в месяц)</div>
+                      <div class="c-schema__wrapper">
+                        <div class="c-schema__grid">
+                          <div class="c-schema__col">
+                            <div class="c-schema__data">
+                              <!--                            <div class="c-schema__res">5 258</div>-->
+                              <span style="height: 20%"></span>
+                            </div>
+                            <div class="c-schema__name">Февраль</div>
+
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 30%"></span></div>
+                            <div class="c-schema__name">Март</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 40%"></span></div>
+                            <div class="c-schema__name">Апрель</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 80%"></span></div>
+                            <div class="c-schema__name">Май</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 60%"></span></div>
+                            <div class="c-schema__name">Июнь</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 55%"></span></div>
+                            <div class="c-schema__name">Июль</div>
+                            <!--                          <div class="c-schema__res">10 250</div>-->
+                          </div>
                         </div>
                       </div>
+
                     </div>
-
                   </div>
-                </div>
 
-                <ul class="results-card-list">
-                  <li><span class="results-card-list__num">50%</span>увеличение конверсии</li>
-                  <li><span class="results-card-list__num">30%</span>увеличение посещаемости</li>
-                  <li><span class="results-card-list__num">30%</span>просто третий показатель для примера</li>
-                </ul>
-              </div>
-              <div class="results-card__img">
-                <img src="./src/img/results-img-1.png" alt="">
+                  <ul class="results-card-list">
+                    <li><span class="results-card-list__num">50%</span>увеличение конверсии</li>
+                    <li><span class="results-card-list__num">30%</span>увеличение посещаемости</li>
+                    <li><span class="results-card-list__num">30%</span>просто третий показатель для примера</li>
+                  </ul>
+                </div>
+                <div class="results-card__img">
+                  <img src="./src/img/results-img-1.png" alt="">
+                </div>
               </div>
             </div>
+            <div class="swiper-slide results-slider__item">
+              <div class="results-card">
+                <div class="results-card__body">
+                  <div class="results-card__schema">
+                    <div class="c-schema c-schema--pink">
+                      <div class="c-schema__title">Посещаемость (человек в месяц)</div>
+                      <div class="c-schema__wrapper">
+                        <div class="c-schema__grid">
+                          <div class="c-schema__col">
+                            <div class="c-schema__data">
+                              <!--                            <div class="c-schema__res">5 258</div>-->
+                              <span style="height: 20%"></span>
+                            </div>
+                            <div class="c-schema__name">Февраль</div>
+
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 30%"></span></div>
+                            <div class="c-schema__name">Март</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 40%"></span></div>
+                            <div class="c-schema__name">Апрель</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 80%"></span></div>
+                            <div class="c-schema__name">Май</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 60%"></span></div>
+                            <div class="c-schema__name">Июнь</div>
+                          </div>
+                          <div class="c-schema__col">
+                            <div class="c-schema__data"><span style="height: 55%"></span></div>
+                            <div class="c-schema__name">Июль</div>
+                            <!--                          <div class="c-schema__res">10 250</div>-->
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <ul class="results-card-list">
+                    <li><span class="results-card-list__num">50%</span>увеличение конверсии</li>
+                    <li><span class="results-card-list__num">30%</span>увеличение посещаемости</li>
+                    <li><span class="results-card-list__num">30%</span>просто третий показатель для примера</li>
+                  </ul>
+                </div>
+                <div class="results-card__img">
+                  <img src="./src/img/results-img-1.png" alt="">
+                </div>
+              </div>
+            </div>
+            ...
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
         </div>
+
 
       </div>
     </div>
@@ -446,37 +522,62 @@
         <h3 class="fail-title">Многие интернет-магазины не достигают результатов от продвижения</h3>
         <div class="fail-bigtitle">Почему<span>?</span></div>
 
-        <div class="fail-slider">
-          <div class="fail-slider__item">
-            <div class="fail-card">
-              <div class="fail-card__title">Неудобная структура</div>
-              <div class="fail-card__text">
-                Sapien pellentesque egestas amet, libero, imperdiet tortor. Magna scelerisque egestas at tincidunt pellentesque ipsum blandit. Et ac lectus vulputate facilisis ornare ultricies dolor, ut. Viverra nulla lorem ut in maecenas morbi. Euismod pharetra non id venenatis aliquet.
+        <div class="swiper-container">
+          <div class="swiper-wrapper fail-slider">
+            <div class="swiper-slide fail-slider__item">
+              <div class="fail-card">
+                <div class="fail-card__title">Неудобная структура</div>
+                <div class="fail-card__text">
+                  Sapien pellentesque egestas amet, libero, imperdiet tortor. Magna scelerisque egestas at tincidunt pellentesque ipsum blandit. Et ac lectus vulputate facilisis ornare ultricies dolor, ut. Viverra nulla lorem ut in maecenas morbi. Euismod pharetra non id venenatis aliquet.
+                </div>
+                <div class="fail-slider-img">
+                  <div class="fail-slider-img__item">
+                    <img src="./src/img/fail-slider-img-1.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide fail-slider__item">
+              <div class="fail-card">
+                <div class="fail-card__title">Неудобная структура</div>
+                <div class="fail-card__text">
+                  Sapien pellentesque egestas amet, libero, imperdiet tortor. Magna scelerisque egestas at tincidunt pellentesque ipsum blandit. Et ac lectus vulputate facilisis ornare ultricies dolor, ut. Viverra nulla lorem ut in maecenas morbi. Euismod pharetra non id venenatis aliquet.
+                </div>
+                <div class="fail-slider-img">
+                  <div class="fail-slider-img__item">
+                    <img src="./src/img/fail-slider-img-2.jpg" alt="">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
         </div>
 
-        <div class="fail-slider-img">
-          <div class="fail-slider-img__item">
-            <img src="./src/img/fail-slider-img-1.jpg" alt="">
-          </div>
-          <div class="fail-slider-img__item">
-            <img src="./src/img/fail-slider-img-2.jpg" alt="">
-          </div>
-          <div class="fail-slider-img__item">
-            <img src="./src/img/fail-slider-img-3.jpg" alt="">
-          </div>
-          <div class="fail-slider-img__item">
-            <img src="./src/img/fail-slider-img-4.jpg" alt="">
-          </div>
-          <div class="fail-slider-img__item">
-            <img src="./src/img/fail-slider-img-5.jpg" alt="">
-          </div>
-          <div class="fail-slider-img__item">
-            <img src="./src/img/fail-slider-img-6.jpg" alt="">
-          </div>
-        </div>
+
+<!--        <div class="fail-slider-img">-->
+<!--          <div class="fail-slider-img__item">-->
+<!--            <img src="./src/img/fail-slider-img-1.jpg" alt="">-->
+<!--          </div>-->
+<!--          <div class="fail-slider-img__item">-->
+<!--            <img src="./src/img/fail-slider-img-2.jpg" alt="">-->
+<!--          </div>-->
+<!--          <div class="fail-slider-img__item">-->
+<!--            <img src="./src/img/fail-slider-img-3.jpg" alt="">-->
+<!--          </div>-->
+<!--          <div class="fail-slider-img__item">-->
+<!--            <img src="./src/img/fail-slider-img-4.jpg" alt="">-->
+<!--          </div>-->
+<!--          <div class="fail-slider-img__item">-->
+<!--            <img src="./src/img/fail-slider-img-5.jpg" alt="">-->
+<!--          </div>-->
+<!--          <div class="fail-slider-img__item">-->
+<!--            <img src="./src/img/fail-slider-img-6.jpg" alt="">-->
+<!--          </div>-->
+<!--        </div>-->
 
       </div>
 

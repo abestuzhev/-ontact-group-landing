@@ -571,29 +571,41 @@ input, textarea {
 /****************************/
 
 .section-results {
+
+  .swiper-container {
+    width: 100%;
+  }
+
   .results {
-    padding: 0 100px;
+    //padding: 0 100px;
 
     &-slider {
+      width: 100%;
       &__item {
-
+        width: 100%;
       }
 
 
     }
 
     &-card {
+      padding: 0 100px;
+      width: 100%;
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: center;
 
       &__body {
-        width: 31%;
+        flex: 0 1 30%;
       }
 
       &__img {
-        width: 69%;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
       }
 
       &__schema {
@@ -1127,7 +1139,7 @@ input, textarea {
 
     &-title {
       position: relative;
-      z-index: 2;
+      z-index: 12;
       font-weight: bold;
       font-size: 32px;
       line-height: 44px;
@@ -1140,7 +1152,7 @@ input, textarea {
       position: absolute;
       top: -35px;
       left: 100px;
-      z-index: 1;
+      z-index: 10;
       font-size: 200px;
       line-height: .5;
       color: #EFEFF7;
@@ -1154,58 +1166,61 @@ input, textarea {
     }
 
     &-slider {
-      padding: 228px 0;
+
+      &__item {
+        //position: absolute;
+
+        &:nth-child(6) .fail-slider-img {
+          z-index: 1;
+          bottom: 0;
+          right: 0;
+        }
+
+        &:nth-child(5) .fail-slider-img {
+          z-index: 2;
+          bottom: 20px;
+          right: 20px;
+        }
+
+        &:nth-child(4) .fail-slider-img {
+          z-index: 3;
+          bottom: 40px;
+          right: 40px;
+        }
+
+        &:nth-child(3) .fail-slider-img {
+          z-index: 4;
+          bottom: 60px;
+          right: 60px;
+        }
+
+        &:nth-child(2) .fail-slider-img {
+          z-index: 5;
+          bottom: 80px;
+          right: 80px;
+        }
+
+        &:nth-child(1) .fail-slider-img {
+          z-index: 6;
+          bottom: 100px;
+          right: 100px;
+        }
+
+      }
 
       &-img {
         position: absolute;
         bottom: 0;
         right: 0;
 
-        &__item {
-          position: absolute;
 
-          &:nth-child(6) {
-            z-index: 1;
-            bottom: 0;
-            right: 0;
-          }
-
-          &:nth-child(5) {
-            z-index: 2;
-            bottom: 20px;
-            right: 20px;
-          }
-
-          &:nth-child(4) {
-            z-index: 3;
-            bottom: 40px;
-            right: 40px;
-          }
-
-          &:nth-child(3) {
-            z-index: 4;
-            bottom: 60px;
-            right: 60px;
-          }
-
-          &:nth-child(2) {
-            z-index: 5;
-            bottom: 80px;
-            right: 80px;
-          }
-
-          &:nth-child(1) {
-            z-index: 6;
-            bottom: 100px;
-            right: 100px;
-          }
-
-        }
       }
     }
 
     &-card {
       width: 50%;
+      padding: 228px 0;
+      background-color: #fff;
 
       &__title {
         font-weight: bold;
