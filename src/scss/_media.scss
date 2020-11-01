@@ -8,6 +8,8 @@
       display: block;
     }
 
+
+
     .header-menu {
       display: none;
       position: fixed;
@@ -34,6 +36,7 @@
   }
 
   .section-cost {
+    overflow: hidden;
     .cost {
       padding: 20px 18px;
     }
@@ -92,6 +95,10 @@
         &-item {
           width: 100%;
           padding: 0 !important;
+
+          &.col {
+            margin-bottom: 30px;
+          }
         }
       }
 
@@ -120,8 +127,64 @@
     }
   }
 
+
+  .section-services {
+    .service {
+
+      &-head {
+        margin-bottom: 30px;
+      }
+
+      &-card {
+        &__title {
+          max-width: 100%;
+        }
+      }
+
+      &-link {
+        padding: 25px 40px;
+      }
+    }
+  }
+
+
 }
 
+/****************************/
+/****************************/
+/****************************/
+@media screen and (max-width:1500px) {
+  .section-fail {
+    .fail {
+      padding: 0;
+
+      &-title {
+        text-align: center;
+        padding: 0;
+      }
+
+      &-bigtitle {
+        display: none;
+      }
+
+      &-slider {
+        &-img {
+          height: 500px;
+          &__item {
+            width: 400px;
+            height: 400px;
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
 /****************************/
 /****************************/
 /****************************/
@@ -145,6 +208,7 @@
     }
   }
 
+  .section-fail .fail-title,
   .section-title {
     font-size: 30px;
     line-height: 30px;
@@ -204,11 +268,6 @@
     }
   }
 
-  .fail {
-    &-bigtitle {
-      display: none;
-    }
-  }
 
   .section-number {
     .number {
@@ -301,7 +360,7 @@
 
       &-form {
         max-width: 450px;
-        padding: 60px;
+        padding: 50px 40px;
       }
 
       &-sale,
@@ -436,6 +495,37 @@
     }
   }
 
+  .section-services {
+    .service {
+      &-card {
+        &__body {
+          padding: 30px 44px;
+        }
+        &__title {
+          font-size: 48px;
+          line-height: 54px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .section-fail {
+    .fail {
+
+      &-slider {
+        &-img {
+          height: 420px;
+
+          &__item {
+            width: 300px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+
 }
 
 
@@ -460,7 +550,11 @@
       &-form {
         max-width: 100%;
 
+        &__title {
+          margin-bottom: 8px;
+        }
       }
+
 
       &-title {
 
@@ -507,6 +601,20 @@
     }
   }
 
+  .section-header {
+    .header {
+      padding: 12px 0 0;
+    }
+  }
+
+  .banner-brand {
+    padding: 0 18px;
+  }
+
+  .wrapper {
+    padding-top: 100px;
+  }
+
   .section-number {
     .number {
 
@@ -522,6 +630,72 @@
     }
   }
 
+  .c-section {
+    padding: 0 0 40px;
+  }
+
+  .section-fail .fail-title,
+  .section-title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0 0 8px;
+  }
+
+  .section-results {
+    .results {
+      padding-bottom: 20px;
+      &-card {
+        &__body {
+          margin-top: -30px;
+        }
+        &__schema {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  .section-services {
+    .service {
+
+      margin-bottom: 20px;
+      &-card {
+        &__body {
+          padding: 24px 34px;
+        }
+        &__title {
+          font-size: 40px;
+          line-height: 44px;
+        }
+
+        &__text {
+          font-size: 16px;
+          line-height: 1.4;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .section-services {
+    .service {
+
+
+      &-link {
+        padding: 20px 25px;
+      }
+    }
+  }
+
+  .section-team {
+    .team {
+      &-card {
+        &.horizontal {
+          padding: 26px 35px;
+        }
+      }
+    }
+  }
 }
 
 /****************************/
@@ -544,13 +718,11 @@
 
     &-advantages {
 
-
       &__item {
 
       }
 
       &-card {
-
 
         &__label {
 
@@ -563,6 +735,85 @@
     }
   }
 
+  .section-efficiency  {
+    .efficiency {
+      //overflow: hidden;
+      &-schema {
+        margin-right: 0;
+        left: 35%;
+      }
+
+      &-form {
+        margin-left: -120px;
+      }
+    }
+  }
+
+  .section-fail {
+    .fail {
+
+      &-title {
+        margin-bottom: 28px;
+      }
+
+      .swiper-container {
+        margin-bottom: 30px;
+
+        .swiper-pagination {
+          display: block;
+          bottom: 0;
+          left: auto;
+          right: 16px;
+          text-align: right;
+          z-index: 1;
+        }
+
+        .fail-slider {
+          overflow: hidden;
+        }
+      }
+
+      &-grid {
+        display: block;
+      }
+
+      &-col {
+        width: 100%;
+      }
+
+      &-card {
+        margin-bottom: 0px;
+        &__title {
+          font-size: 18px;
+          line-height: 24px;
+          margin-bottom: 12px;
+        }
+
+        &__text {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+
+      &-slider {
+        &-img {
+          width: 100%;
+          height: 400px;
+          overflow: hidden;
+          position: relative;
+
+          &__item {
+            width: 100%;
+            height: 100%;
+            bottom: 0 !important;
+            right: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+
 }
 
 /****************************/
@@ -570,6 +821,254 @@
 /****************************/
 
 @media screen and (max-width:800px) {
+  .section-header {
+    background-color: #f7f7f7;
+    @include animation();
+
+    &.sticky {
+      @include animation();
+      top: -40px;
+
+      .header {
+        padding-top: 0;
+      }
+      .header-logo {
+        //display: none;
+
+      }
+
+      .header-info__logo {
+        display: block;
+      }
+    }
+
+    .header {
+      display: block;
+      margin-bottom: 6px;
+
+
+
+      &-info {
+        justify-content: space-between;
+      }
+
+      &-logo__text {
+        display: none;
+      }
+
+      &-logo {
+        img {
+          margin: 0 auto 8px;
+        }
+      }
+
+      &-phone {
+        span {
+          display: none;
+        }
+      }
+
+      &-btn {
+        order: 2;
+        border: none;
+        text-decoration: underline;
+        font-size: 16px;
+        margin: 0;
+        white-space: nowrap;
+      }
+
+      &-phone {
+        order: 3;
+        a {
+          white-space: nowrap;
+        }
+      }
+
+      &-menu {
+        &__hamburger {
+          order: 1;
+          margin: 0 14px 0 0;
+        }
+      }
+
+
+    }
+  }
+
+  .wrapper {
+    padding-top: 106px;
+  }
+
+  .section-banner {
+    .layout {
+      padding: 0;
+    }
+  }
+
+  .banner {
+    &-top {
+      padding: 40px 24px 100px;
+      background-position: 75% 65px;
+      background-color: #f8f8f8;
+      position: relative;
+
+      &__title {
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 8px;
+      }
+
+      .c-btn {
+        position: absolute;
+        left: 24px;
+        bottom: 40px;
+      }
+
+      &__text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+      }
+
+      &__head {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .section-audit {
+    .layout {
+      padding: 0;
+    }
+
+    .audit {
+      &-body {
+        padding: 30px;
+      }
+
+      &-form {
+        padding: 50px 30px;
+      }
+    }
+  }
+
+  .section-efficiency {
+    position: relative;
+
+    .layout {
+      padding: 0;
+    }
+
+    .section-title {
+
+      margin: 0;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      right: 20px;
+      z-index: 1;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    .efficiency {
+
+      padding: 80px 10px 30px;
+
+      &__title {
+        display: none;
+      }
+
+      &-schema {
+        left: 0;
+        margin: 0 auto 30px;
+        width: 100%;
+        max-width: 465px;
+        img {
+          width: 100%;
+        }
+      }
+      &-form {
+        position: static;
+        margin: 0;
+        transform: none;
+        margin-bottom: 30px;
+
+        &-card {
+          &__text {
+            width: 160px;
+            line-height: 16px;
+          }
+        }
+
+        &__title {
+          right: auto;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+        }
+
+        &__item {
+          margin-bottom: 20px;
+          right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .section-services {
+    .service {
+
+      &-head {
+        margin-bottom: 24px;
+      }
+
+      &-card {
+        flex-flow: column wrap;
+        &.v1 {
+          .service-card__img {
+            width: 100%;
+          }
+
+          .service-card__body {
+            width: 100%;
+            background-color: #fff;
+          }
+        }
+        &__img {
+          order: 2;
+          width: 100%;
+        }
+        &__body {
+          order: 1;
+          width: 100%;
+          padding: 0;
+          margin-bottom: 20px;
+
+          .c-btn-layout {
+            text-align: center;
+          }
+        }
+        &__title {
+          text-align: center;
+          margin-bottom: 14px;
+          font-size: 34px;
+          line-height: 36px;
+        }
+
+        &__text {
+        }
+
+
+      }
+    }
+  }
+
+  .section-form {
+    background: none;
+  }
+
 
 }
 
@@ -580,6 +1079,16 @@
 @media screen and (max-width:780px) {
   .layout {
     padding: 0 18px;
+  }
+
+  .banner-top {
+    padding-left: 18px;
+    padding-right: 18px;
+    .c-btn {
+      position: absolute;
+      left: 18px;
+      bottom: 26px;
+    }
   }
 
 
@@ -624,8 +1133,137 @@
     }
   }
 
+  .banner-arrow {
+    margin-top: 14px;
+  }
+
+  .section-audit {
+
+    .audit {
+      &-body {
+        padding: 30px 18px;
+      }
+    }
+  }
+
+  .section-team {
+    .team {
+      display: none;
+    }
+
+    .team-mobile {
+      display: block;
+
+      .team-card {
+        height: 550px;
+        background-size: 250px !important;
+      }
+    }
+  }
+
 }
 
+
+/****************************/
+/****************************/
+/****************************/
+
+@media screen and (max-width:620px) {
+  .banner {
+    &-top {
+      padding: 22px 18px 67px;
+      background-position: 71% 28px;
+      background-size: 1230px;
+
+      &-advantages {
+        max-width: 64%;
+
+        &-card__text {
+          font-size: 14px;
+          line-height: 20px;
+          flex: 1;
+        }
+      }
+      &__title {
+      }
+
+      .c-btn {
+        padding: 14px 19px;
+        font-size: 14px;
+      }
+
+      &__text {
+      }
+
+      &__head {
+      }
+    }
+  }
+
+  .section-services {
+    .service {
+
+
+
+      &-head {
+      }
+
+      &-link {
+        position: relative;
+        padding: 15px 6px;
+        display: block;
+
+        &:nth-child(1) {
+          &::before {
+            content: '';
+            background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            content: '';
+            background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            content: '';
+            background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            content: '';
+            background: linear-gradient(90.05deg, #DB40A2 0.05%, #FFA6BB 99.96%);
+          }
+        }
+
+        &::after {
+          content: '';
+          display: none;
+        }
+
+        &.active {
+
+          &::before {
+            content: '';
+            position: absolute;
+            bottom: -7px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 14px;
+            height: 14px;
+            border-radius: 50px;
+            background-color: #ccc;
+          }
+        }
+      }
+
+    }
+  }
+
+
+}
 
 /****************************/
 /****************************/
@@ -634,5 +1272,462 @@
 @media screen and (max-width:580px) {
   .layout {
     padding: 0 10px;
+  }
+  .banner-brand__item {
+    width: 33%;
+  }
+
+  .section-team {
+
+
+    .team-mobile {
+      display: block;
+
+      .team-card {
+        height: auto;
+        background-size: 200px !important;
+        padding: 27px 18px 37px;
+
+        &__name {
+          line-height: 16px;
+        }
+
+        &__quote {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 21px;
+        }
+
+        &__wrapper {
+          margin-bottom: 26px;
+        }
+
+
+        &__head {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .section-efficiency {
+    .efficiency-popup {
+      padding: 20px 18px 30px;
+      border-radius: 30px;
+
+      &-indicators {
+        display: block;
+
+        &__col {
+          display: inline-block;
+        }
+
+        &__operator {
+          position: static;
+          display: inline-block;
+          margin: 0 4px;
+        }
+
+        &__card {
+          div {
+            display: inline-block;
+            margin-right: 4px;
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          span {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+          }
+        }
+      }
+
+      &-result {
+
+        &__title {
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+
+        &__arrow {
+          overflow: hidden;
+          width: 10px !important;
+          height: 24px;
+          position: relative;
+          margin: 0 20px;
+
+          img {
+            position: absolute;
+            right: 0;
+            top: -7px;
+          }
+        }
+
+        &__bigarrow {
+          width: 27px;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        &__row {
+          font-size: 18px;
+          line-height: 26px;
+        }
+
+        &__info {
+          width: auto;
+        }
+
+        &-all {
+          &__num {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+
+    }
+
+
+  }
+
+
+}
+
+
+@media screen and (max-width:480px) {
+  .layout {
+    padding: 0 10px;
+  }
+
+  .section-header {
+    .header {
+      display: block;
+      padding: 18px 0 0;
+
+      &-btn {
+        font-weight: normal;
+        text-transform: none;
+        font-size: 12px;
+        padding: 12px;
+      }
+
+      &-phone {
+        a {
+          font-weight: normal;
+          font-size: 12px;
+        }
+      }
+
+      &-logo {
+        padding: 0;
+        img {
+          width: 185px;
+        }
+      }
+
+    }
+  }
+
+  .c-form {
+    &__text {
+      margin-bottom: 10px;
+    }
+  }
+
+  .section-results {
+    .results {
+      &-card {
+
+        &__body {
+          padding: 18px 0;
+        }
+        &__schema {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+
+  .section-cost {
+    .cost {
+      padding: 0;
+    }
+  }
+
+  .banner-top {
+    background-position: 76% 94px;
+    //background-size: 420%;
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .c-section {
+    padding: 0 0 30px;
+  }
+
+  .section-efficiency .section-title {
+    margin: 0 0 20px;
+  }
+
+  .section-fail .fail-title,
+  .section-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0 0 20px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 17px;
+  }
+
+
+  .section-audit {
+    .audit {
+      margin-bottom: 40px;
+      &-link {
+        font-weight: normal;
+        text-transform: none;
+        font-size: 12px;
+      }
+
+      &-form {
+        padding: 25px 18px;
+
+        .c-btn {
+          width: auto;
+        }
+
+        .c-btn-layout {
+          margin-bottom: 18px;
+        }
+
+        &__subtitle {
+          margin-bottom: 18px;
+        }
+      }
+
+      &-subtitle {
+        font-size: 14px;
+      }
+
+      &-sale, &-title {
+        font-size: 22px;
+        line-height: 24px;
+        text-transform: uppercase;
+      }
+
+      &-list {
+        margin-bottom: 20px;
+        li {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .c-btn-big {
+    padding: 14px 19px;
+    font-size: 14px;
+  }
+
+  .c-btn-default {
+    padding: 10px 20px;
+  }
+
+  .section-efficiency {
+
+    .efficiency {
+
+      &-schema {
+
+        &__text {
+          h4 {
+            font-size: 14px;
+            line-height: 16px;
+          }
+
+          span {
+            font-size: 12px;
+            line-height: 14px;
+          }
+        }
+
+      }
+      &-form {
+
+        &__item {
+          margin-bottom: 10px;
+        }
+
+
+        &-card {
+          &__input {
+            width: 120px;
+          }
+        }
+      }
+
+      .c-btn span {
+        display: none;
+      }
+    }
+  }
+
+
+  .section-services {
+    .service {
+
+      &-head {
+      }
+
+      &-card {
+
+        &__img {
+
+        }
+        &__body {
+
+        }
+        &__title {
+          font-size: 18px;
+          line-height: 22px;
+          margin-bottom: 10px;
+        }
+
+        &__text {
+          font-size: 15px;
+          line-height: 1.3;
+        }
+
+
+      }
+    }
+  }
+
+  .section-services {
+    .service {
+
+      &-link {
+        font-size: 11px;
+      }
+
+    }
+  }
+
+  .section-number {
+
+    .number {
+      margin: 30px 0;
+
+      &-col {
+        margin-bottom: 20px;
+      }
+      &-card {
+        &__title {
+          font-size: 12px;
+          line-height: 16px;
+          padding: 0;
+        }
+
+        &-label {
+          width: 150px;
+          height: 150px;
+
+          &__num {
+            font-size: 20px;
+            line-height: 20px;
+          }
+        }
+      }
+
+
+    }
+  }
+
+  .section-fail {
+    .fail {
+
+      &-card {
+        &__title {
+          font-size: 14px;
+          line-height: 20px;
+        }
+
+        &__text {
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+
+      &-slider {
+        &-img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+
+  .menu-mobile {
+    max-width: 100%;
+  }
+
+
+}
+
+@media (max-width: 360px) {
+  .section-number {
+    .number {
+
+      &-card {
+        &__title {
+        }
+
+        &-label {
+          width: 120px;
+          height: 120px;
+
+        }
+      }
+    }
+  }
+
+  .c-form {
+    &__text {
+      font-size: 12px;
+    }
+  }
+
+  .section-team {
+
+
+    .team-mobile {
+
+      .team-card {
+        background-size: 190px !important;
+
+        &__list {
+          margin-left: -18px;
+
+          li {
+            font-size: 10px !important;
+            font-weight: 400;
+            line-height: 1.2;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
   }
 }
