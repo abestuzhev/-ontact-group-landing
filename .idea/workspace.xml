@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19e5983e-cb4c-4596-914c-9069bab346cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/js/liquidBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_animation.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +59,8 @@
       <workItem from="1603905948304" duration="8241000" />
       <workItem from="1604084078329" duration="8289000" />
       <workItem from="1604139413227" duration="17616000" />
-      <workItem from="1604213303688" duration="22952000" />
+      <workItem from="1604213303688" duration="23620000" />
+      <workItem from="1604341477694" duration="3227000" />
     </task>
     <servers />
   </component>

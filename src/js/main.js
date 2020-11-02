@@ -180,4 +180,26 @@ $(function () {
     e.preventDefault();
     $('.menu-mobile').removeClass('is-visible');
   });
+
+
+  $('.header-menu__link').on('click', function(event) {
+    event.preventDefault();
+
+      // Store hash
+      const hash = this.hash;
+      const heightHeader = $('.section-header').height();
+      const heightHash = $(hash).offset().top - heightHeader ;
+
+
+      $('html, body').animate({
+
+        scrollTop: heightHash
+
+      }, 800);
+
+  });
+
+
+
+
 });
