@@ -35,6 +35,7 @@
   //overflow-y: scroll;
   font-size: 0;
   overflow-y: scroll;
+  transition: all .4s ease-in-out;
 }
 
 .mfp-wrap.is-visible {
@@ -135,14 +136,14 @@
 .is-visible {
   opacity: 1 !important;
   visibility: visible !important;
-  transition: all .1s ease;
+  transition: all .4s ease-in-out;
 }
 
 .is-visible .popup {
   opacity: 1 !important;
   visibility: visible !important;
   transform: scale(1);
-  transition: all .1s ease;
+  transition: all .2s ease-in-out;
 
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;

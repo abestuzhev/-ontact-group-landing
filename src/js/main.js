@@ -164,6 +164,7 @@ $(function () {
   });
 
   showPopup(".js-show-consultation", '.popup-auth');
+  showPopup(".js-show-email", '.popup-email');
 
 
   $(document).on('click', '.js-show-menu', function (e) {
@@ -182,7 +183,7 @@ $(function () {
   });
 
 
-  $('.header-menu__link').on('click', function(event) {
+  $('.header-menu__link, .banner-arrow__icon').on('click', function(event) {
     event.preventDefault();
 
       // Store hash

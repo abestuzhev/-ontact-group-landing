@@ -8,8 +8,6 @@
       display: block;
     }
 
-
-
     .header-menu {
       display: none;
       position: fixed;
@@ -31,6 +29,12 @@
     }
 
     .header {
+
+      &-phone {
+        &__text {
+          display: none;
+        }
+      }
 
     }
   }
@@ -148,6 +152,38 @@
   }
 
 
+}
+
+
+
+/****************************/
+/****************************/
+/****************************/
+@media screen and (min-width:1600px) {
+  .section-results {
+    .swiper-button-prev,
+    .swiper-button-next {
+      width: 52px;
+      height: 18px;
+      margin: 0 20px 0 0;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-container-rtl .swiper-button-next::after {
+      content: '';
+      width: 52px;
+      height: 18px;
+      background: url(../src/img/icon-arrow-left.png) 0 0 no-repeat;
+    }
+
+    .swiper-button-next:after,
+    .swiper-container-rtl .swiper-button-prev:after {
+      content: '';
+      width: 52px;
+      height: 18px;
+      background: url(../src/img/icon-arrow-right.png) 0 0 no-repeat;
+    }
+  }
 }
 
 /****************************/
@@ -827,7 +863,7 @@
 
     &.sticky {
       @include animation();
-      top: -40px;
+      top: -65px;
 
       .header {
         padding-top: 0;
@@ -1405,6 +1441,12 @@
   }
 
   .section-header {
+
+    &.sticky {
+      @include animation();
+      top: -40px;
+    }
+
     .header {
       display: block;
       padding: 18px 0 0;
