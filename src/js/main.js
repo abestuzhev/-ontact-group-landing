@@ -1,10 +1,10 @@
 
-const collectionSlideResult = document.querySelectorAll('.fail-slider-img__item');
-const collectionSlide = document.querySelectorAll('.fail-slider-img__item');
+var collectionSlideResult = document.querySelectorAll('.fail-slider-img__item');
+var collectionSlide = document.querySelectorAll('.fail-slider-img__item');
 
 
 
-const resultsSlider = new Swiper('.results .swiper-container', {
+var resultsSlider = new Swiper('.results .swiper-container', {
   direction: 'horizontal',
   loop: true,
 
@@ -21,7 +21,7 @@ const resultsSlider = new Swiper('.results .swiper-container', {
 
 
 
-const failSlider = new Swiper('.fail .swiper-container', {
+var failSlider = new Swiper('.fail .swiper-container', {
   direction: 'horizontal',
   loop: false,
   spaceBetween: 30,
@@ -42,7 +42,7 @@ const failSlider = new Swiper('.fail .swiper-container', {
 
   on: {
     slideChange: function () {
-      const activeIndex = this.activeIndex;
+      var activeIndex = this.activeIndex;
       collectionSlide.forEach(function (elem) {
         elem.classList.remove('active');
       });
@@ -62,7 +62,7 @@ const failSlider = new Swiper('.fail .swiper-container', {
   }
 });
 
-const teamSlider = new Swiper('.team-mobile .swiper-container', {
+var teamSlider = new Swiper('.team-mobile .swiper-container', {
   direction: 'horizontal',
   loop: true,
 
@@ -87,18 +87,16 @@ document.addEventListener('click', function (event) {
 });
 
 
-const windowWidth = (window.innerWidth); // вся ширина окна
-const documentWidth = (document.documentElement.clientWidth); // ширина минус прокрутка
-
-
+var windowWidth = (window.innerWidth); // вся ширина окна
+var documentWidth = (document.documentElement.clientWidth); // ширина минус прокрутка
+//
+//
 window.onscroll = function() {stickyHeader()};
 
-const header = document.querySelector(".section-header");
+var header = document.querySelector(".section-header");
 
-// Get the offset position of the navbar
-const sticky = header.offsetTop;
+var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function stickyHeader() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -110,9 +108,9 @@ function stickyHeader() {
 
 $(function () {
 
-  const $html = $('html');
-  const $header = $('.header-layout');
-
+  var $html = $('html');
+  var $header = $('.header-layout');
+  //
   $('.js-phone-mask').mask('+7(000)000-00-00', {clearIfNotMatch: true});
 
   function showPopup(icon, popup) {
@@ -126,7 +124,7 @@ $(function () {
       $html.addClass('blocked');
       // $('body').addClass('blocked');
 
-      const widthScroll = windowWidth - documentWidth;
+      var widthScroll = windowWidth - documentWidth;
       console.log('widthScroll: ' + widthScroll);
       if (windowWidth > documentWidth) {
         $html.css({
@@ -157,7 +155,7 @@ $(function () {
       'padding-right': '0'
     });
 
-    const parentModal = $(this).parents('.mfp-wrap');
+    var parentModal = $(this).parents('.mfp-wrap');
     if (parentModal.data('save')) {
       onPopupClose(parentModal);
     }
@@ -181,15 +179,15 @@ $(function () {
     e.preventDefault();
     $('.menu-mobile').removeClass('is-visible');
   });
-
-
+  //
+  //
   $('.header-menu__link, .banner-arrow__icon').on('click', function(event) {
     event.preventDefault();
 
       // Store hash
-      const hash = this.hash;
-      const heightHeader = $('.section-header').height();
-      const heightHash = $(hash).offset().top - heightHeader ;
+      var hash = this.hash;
+      var heightHeader = $('.section-header').height();
+      var heightHash = $(hash).offset().top - heightHeader ;
 
 
       $('html, body').animate({
@@ -199,8 +197,18 @@ $(function () {
       }, 800);
 
   });
-
-
+  //
+  //
+  // /*простые табы*/
+  $(document).on('click', '.tabs-menu a', function(event) {
+    event.preventDefault();
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+    let tab = $(this).attr("href");
+    $('.tab').find(".tab-content").not(tab).css("display", "none");
+    // $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
+    $(tab).fadeIn();
+  });
 
 
 });

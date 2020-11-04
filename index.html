@@ -18,14 +18,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
-
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="src/js/vendor/swiper-5.3.8/swiper.min.css">
   <link rel="stylesheet" href="dist/normalize.css">
   <link rel="stylesheet" href="dist/base.css">
   <link rel="stylesheet" href="dist/main.css">
@@ -78,8 +73,9 @@
         <div class="banner-top__head ">
           <div class="banner-top__title a-turn a-turn-3">Эфективное продвижение интернет-магазинов</div>
           <div class="banner-top__text a-turn a-turn-3">Научим ваш сайт продавать много</div>
-          <a href="#" class="c-btn c-btn-big js-show-consultation a-turn a-turn-3">получить консультацию</a>
-
+          <div class="c-btn-layout c-btn-layout--left a-turn a-turn-3">
+            <a href="#" class="c-btn c-btn-big js-show-consultation c-btn--blue">получить консультацию</a>
+          </div>
         </div>
 
         <div class="banner-top__body">
@@ -874,9 +870,10 @@
               </ul>
               <div class="cost-plane-gift">
                 <div class="cost-plane-gift__icon">
-                  <svg class="icon-gift">
-                    <use xlink:href="./src/img/main.svg#icon-gift"></use>
-                  </svg>
+                  <span></span>
+<!--                  <svg class="icon-gift">-->
+<!--                    <use xlink:href="./src/img/main.svg#icon-gift"></use>-->
+<!--                  </svg>-->
 <!--                  <img src="./src/img/icon-gift-blue.png" alt="">-->
                 </div>
                 <ul class="cost-plane-gift__list">
@@ -920,9 +917,11 @@
 
               <div class="cost-plane-gift">
                 <div class="cost-plane-gift__icon">
-                  <svg class="icon-gift">
-                    <use xlink:href="./src/img/main.svg#icon-gift"></use>
-                  </svg>
+                  <span></span>
+<!--                  <svg class="icon-gift">-->
+<!--                    <use xlink:href="./src/img/main.svg#icon-gift"></use>-->
+<!--                  </svg>-->
+
 <!--                  <img src="./src/img/icon-gift-pink.png" alt="">-->
                 </div>
                 <ul class="cost-plane-gift__list">
@@ -1050,7 +1049,7 @@
     <div class="layout">
       <div class="audit">
         <div class="audit-body">
-          <div class="audit-title"><span class="audit-sale">15 000₽</span>Бесплатно только до 30 октября!</div>
+          <div class="audit-title"><span class="audit-sale">15 000₽</span><span class="audit-title-big">Бесплатно</span> только до 30 октября!</div>
           <div class="audit-subtitle">Экспертная оценка вашего сайта и продвижения.</div>
           <ul class="audit-list">
             <li>Мы проанализируем эффективность</li>
@@ -1099,27 +1098,81 @@
       <h3 class="section-title">Наши услуги</h3>
 
       <div class="service">
-        <div class="service-head">
-          <a href="#" class="service-link">Продвижение сайтов</a>
-          <a href="#" class="service-link active">Создание сайтов</a>
-          <a href="#" class="service-link">Контекстная реклама</a>
-          <a href="#" class="service-link">Управление репутацией</a>
+        <div class="service-head tabs-menu">
+          <a href="#promotion" class="service-link active">Продвижение сайтов</a>
+          <a href="#create" class="service-link">Создание сайтов</a>
+          <a href="#advertising" class="service-link">Контекстная реклама</a>
+          <a href="#reputation" class="service-link">Управление репутацией</a>
         </div>
-        <div class="service-card v1">
-          <div class="service-card__img">
-            <img src="./src/img/service-img-1.png" alt="">
-          </div>
-          <div class="service-card__body">
-            <div class="service-card__title">Продвижение сайтов</div>
-            <div class="service-card__text">
-              Наша компания предлагает поисковое продвижение сайтов, аудит и оптимизацию. Более 12 лет наши специалисты успешно решают задачи разного уровня сложности, показывая отличные результаты за кратчайшие сроки.
-            </div>
+        <div class="tab">
+          <div id="promotion" class="tab-content">
+            <div class="service-card service-card--blue v2">
+              <div class="service-card__body">
+                <div class="service-card__title">Продвижение сайтов</div>
+                <div class="service-card__text">
+                  Наша компания предлагает поисковое продвижение сайтов, аудит и оптимизацию. Более 12 лет наши специалисты успешно решают задачи разного уровня сложности, показывая отличные результаты за кратчайшие сроки.
+                </div>
 
-            <div class="c-btn-layout c-btn-layout--left">
-              <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                <div class="c-btn-layout c-btn-layout--left">
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                </div>
+              </div>
+              <div class="service-card__img">
+                <img src="./src/img/service-img-1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div id="create" class="tab-content">
+            <div class="service-card v1">
+              <div class="service-card__img">
+                <img src="./src/img/service-img-4.png" alt="">
+              </div>
+              <div class="service-card__body">
+                <div class="service-card__title">Создание сайтов</div>
+                <div class="service-card__text">
+                  У нас большой опыт в создании сайтов и много клиентов. Мы создавали квизы, лендинги, визитки, магазины и порталы, как с нуля, так и по шаблону, выбранным заказчиком. И мы можем доказать свою квалификацию!                </div>
+
+                <div class="c-btn-layout c-btn-layout--left">
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="advertising" class="tab-content">
+            <div class="service-card v1">
+              <div class="service-card__img">
+                <img src="./src/img/service-img-2.png" alt="">
+              </div>
+              <div class="service-card__body">
+                <div class="service-card__title">Контекстная реклама</div>
+                <div class="service-card__text">
+                  В современном мире очень сложно переоценить рекламу. Именно тогда. когда вас видят на первых страницах в поисковых системах у вас имеется стабильный приток новых покупателейи повышение собственного дохода.                </div>
+
+                <div class="c-btn-layout c-btn-layout--left">
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="reputation" class="tab-content">
+            <div class="service-card service-card--purple v2">
+              <div class="service-card__body">
+                <div class="service-card__title">управление репутацией</div>
+                <div class="service-card__text">
+                  Более 60% клиентов читают отзывы перед покупкой, и более 80%, прочитавших отзывы, ориентируются только на информацию, полученную из отзывов.
+                  Статистика неумолима: Общий спрос запросов со словом «отзывы», составляет более 42 млн.
+                </div>
+                <div class="c-btn-layout c-btn-layout--left">
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                </div>
+              </div>
+              <div class="service-card__img">
+                <img src="./src/img/service-img-3.png" alt="">
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -1542,8 +1595,11 @@
 <!-- Add your site or application content here -->
 <script src="src/js/vendor/modernizr-3.11.2.min.js"></script>
 <script src="src/js/vendor/jquery-3.5.1.min.js"></script>
+<!--<script src="src/js/vendor/swiper/swiper-bundle.js"></script>-->
+<script src="src/js/vendor/swiper-5.3.8/swiper.min.js"></script>
+
+<!--<script src="src/js/vendor/swiper/swiper-bundle.min.js"></script>-->
 <script src="src/js/vendor/jquery.mask.min.js"></script>
-<!--<script src="src/js/liquidBtn.js"></script>-->
 <script src="src/js/plugins.js"></script>
 <script src="src/js/main.js"></script>
 

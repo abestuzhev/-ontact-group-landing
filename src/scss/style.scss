@@ -67,6 +67,14 @@ input, textarea {
   padding: 0 80px;
 }
 
+.tab-content {
+  display: none;
+}
+
+.tab-content:nth-child(1) {
+  display: block;
+}
+
 .wrapper {
   padding-top: 146px;
 }
@@ -119,7 +127,7 @@ input, textarea {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   @include clear-link();
-  @include animation();
+  transition: .3s ease-in-out;
   outline: none;
   border: none;
   color: #EEF2F5;
@@ -128,11 +136,37 @@ input, textarea {
   display: inline-block;
   cursor: pointer;
   background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+  filter: hue-rotate(0deg);
 
   &:hover {
-    @include animation();
     transform: scale(1.03);
+    background-position: 100% 0;
+    //transition: all .5s ease-in-out;
   }
+
+  //&--blue {
+  //  background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+  //
+  //  &:hover {
+  //    filter: hue-rotate(100deg);
+  //  }
+  //}
+  //
+  //&--green {
+  //  background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+  //
+  //  &:hover {
+  //    filter: hue-rotate(100deg);
+  //  }
+  //}
+  //
+  //&--purple {
+  //  background: linear-gradient(90.05deg, #DB40A2 0.05%, #FFA6BB 99.96%);
+  //
+  //  &:hover {
+  //    filter: hue-rotate(620deg);
+  //  }
+  //}
 
   &-layout {
     &--center {
@@ -196,7 +230,7 @@ input, textarea {
   width: 100%;
   padding: 13px 21px;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 18px;
   background: #FFFFFF;
   border: none;
   outline: none;
@@ -1353,6 +1387,10 @@ input, textarea {
         .icon-gift {
           fill: #fff;
         }
+
+        .cost-plane-gift__icon span {
+          background: url(../src/img/icon-gift-white.png) 0 0 no-repeat;
+        }
       }
 
       &__head {
@@ -1457,11 +1495,15 @@ input, textarea {
         align-items: flex-start;
         margin-bottom: 20px;
 
+
+
         &__icon {
           margin-right: 15px;
 
-          img {
-
+          span {
+            width: 37px;
+            height: 43px;
+            display: block;
           }
         }
 
@@ -1526,6 +1568,10 @@ input, textarea {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
 
+        .cost-plane-gift__icon span {
+          background: url(../src/img/icon-gift-blue.png) 0 0 no-repeat;
+        }
+
         .cost-plane-gift__list {
           color: #0D83D9;
         }
@@ -1550,6 +1596,11 @@ input, textarea {
 
         .cost-plane__head {
           border-color: #DC44A3;
+        }
+
+
+        .cost-plane-gift__icon span {
+          background: url(../src/img/icon-gift-pink.png) 0 0 no-repeat;
         }
 
         .cost-plane__list li::before {
@@ -1991,14 +2042,28 @@ input, textarea {
       justify-content: flex-start;
       align-items: stretch;
 
+
+
       &.v1 {
+        .service-card__img {
+          width: 44%;
+          background-color: #f6f7f7;
+        }
+
+        .service-card__body {
+          width: 56%;
+          background-color: #f6f7f7;
+        }
+      }
+
+      &.v2 {
         .service-card__img {
           width: 44%;
         }
 
         .service-card__body {
           width: 56%;
-          background-color: #f6f7f7;
+          background-color: #fff;
         }
       }
 
@@ -2045,6 +2110,57 @@ input, textarea {
 
       .c-btn {
         background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+      }
+
+      &--green {
+        .service-card__title {
+          color: #36F298;
+          background-image: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+          background-size: 100%;
+          background-repeat: repeat;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
+
+        .c-btn {
+          background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+        }
+      }
+
+      &--blue {
+        .service-card__title {
+          color: #0D81D8;
+          background-image: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);;
+          background-size: 100%;
+          background-repeat: repeat;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
+
+        .c-btn {
+          background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);;
+        }
+      }
+
+      &--purple {
+        .service-card__title {
+          color: #DB40A2;
+          background-image: linear-gradient(90.05deg, #DB40A2 0.05%, #FFA6BB 99.96%);
+          background-size: 100%;
+          background-repeat: repeat;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -moz-background-clip: text;
+          -moz-text-fill-color: transparent;
+        }
+
+        .c-btn {
+          background: linear-gradient(90.05deg, #DB40A2 0.05%, #FFA6BB 99.96%);
+        }
       }
 
     }

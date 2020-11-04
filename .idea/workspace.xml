@@ -5,10 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/main.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/main.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/service-img-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/service-img-2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,8 @@
       <workItem from="1604139413227" duration="17616000" />
       <workItem from="1604213303688" duration="23620000" />
       <workItem from="1604341477694" duration="3282000" />
-      <workItem from="1604421436804" duration="8580000" />
+      <workItem from="1604421436804" duration="9264000" />
+      <workItem from="1604510297728" duration="8691000" />
     </task>
     <servers />
   </component>

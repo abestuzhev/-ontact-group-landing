@@ -634,6 +634,10 @@
         width: 100%;
         margin-bottom: 20px;
       }
+
+      &-plane-gift__icon {
+        display: block;
+      }
     }
   }
 
@@ -1074,11 +1078,11 @@
         }
         &__img {
           order: 2;
-          width: 100%;
+          width: 100% !important;
         }
         &__body {
           order: 1;
-          width: 100%;
+          width: 100% !important;
           padding: 0;
           margin-bottom: 20px;
 
@@ -1313,6 +1317,34 @@
     width: 33%;
   }
 
+  .section-audit {
+    .audit {
+      &-list {
+        li {
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 15px;
+          color: #4D5264;
+          margin-bottom: 16px;
+          padding-left: 30px;
+
+          &::before {
+            content: '';
+            top: 50%;
+            margin-top: -12px;
+          }
+        }
+      }
+
+      &-subtitle {
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 18px;
+        color: #4D5264;
+      }
+    }
+  }
+
   .section-team {
 
 
@@ -1431,6 +1463,27 @@
 
   }
 
+  .section-cost {
+    .cost {
+
+      &-item {
+        padding: 0;
+      }
+
+      &-plane {
+        &__list {
+          padding-left: 0;
+        }
+
+        &__head {
+          padding: 13px 18px;
+        }
+
+
+      }
+    }
+  }
+
 
 }
 
@@ -1482,7 +1535,9 @@
   }
 
   .section-results {
+    padding-bottom: 20px !important;
     .results {
+      padding-bottom: 0;
       &-card {
 
         &__body {
@@ -1493,12 +1548,24 @@
         }
       }
     }
+
+    .swiper-container {
+      //padding-bottom: 0;
+    }
   }
 
 
   .section-cost {
     .cost {
       padding: 0;
+
+      &-plane {
+        &__title,
+        &__price {
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
     }
   }
 
@@ -1540,6 +1607,17 @@
         font-weight: normal;
         text-transform: none;
         font-size: 12px;
+        display: block;
+        text-align: right;
+        color: #4D5264;
+      }
+
+      &-title {
+        &-big {
+          font-weight: bold;
+          font-size: 30px;
+          line-height: 30px;
+        }
       }
 
       &-form {
@@ -1641,13 +1719,13 @@
 
         }
         &__title {
-          font-size: 18px;
+          font-size: 16px;
           line-height: 22px;
           margin-bottom: 10px;
         }
 
         &__text {
-          font-size: 15px;
+          font-size: 14px;
           line-height: 1.3;
         }
 
@@ -1724,6 +1802,20 @@
     max-width: 100%;
   }
 
+  .section-cost {
+    .cost {
+      &-plane {
+        &__desc {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 13px;
+          letter-spacing: 0.05em;
+          color: #4D5264;
+        }
+      }
+    }
+  }
+
 
 }
 
@@ -1750,9 +1842,33 @@
     }
   }
 
+  .section-audit {
+    .audit {
+      &-list {
+        li {
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+
+    }
+  }
+
+  .section-cost {
+    .cost {
+      &-plane {
+        &__list {
+          li {
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+
   .section-team {
-
-
     .team-mobile {
 
       .team-card {
