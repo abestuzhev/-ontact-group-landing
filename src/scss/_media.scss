@@ -1195,8 +1195,8 @@
       display: block;
 
       .team-card {
-        height: 550px;
-        background-size: 250px !important;
+        height: auto;
+        //background-size: 250px !important;
       }
     }
   }
@@ -1353,8 +1353,14 @@
 
       .team-card {
         height: auto;
-        background-size: 200px !important;
+        //background-size: 200px !important;
         padding: 27px 18px 37px;
+
+        &__list {
+          li:nth-child(1) {
+            display: inline-block;
+          }
+        }
 
         &__name {
           line-height: 16px;
@@ -1362,8 +1368,8 @@
 
         &__quote {
           font-weight: 400;
-          font-size: 16px;
-          line-height: 21px;
+          font-size: 14px;
+          line-height: 18px;
         }
 
         &__wrapper {
@@ -1872,7 +1878,23 @@
     .team-mobile {
 
       .team-card {
-        background-size: 190px !important;
+        //background-size: 190px !important;
+
+        &__quote {
+          font-weight: normal;
+          font-size: 11px;
+          line-height: 16px;
+        }
+
+        &__name {
+          font-size: 14px;
+        }
+
+        &__position {
+          font-size: 14px;
+          line-height: 34px;
+          letter-spacing: 0.05em;
+        }
 
         &__list {
           margin-left: -18px;
@@ -1883,6 +1905,7 @@
             line-height: 1.2;
             text-transform: uppercase;
             margin-bottom: 10px;
+            padding: 9px 18px !important;
           }
         }
       }

@@ -2315,12 +2315,17 @@ input, textarea {
         padding: 0;
         margin: 0;
 
+
         li {
           font-weight: 300;
           font-size: 16px;
           line-height: 29px;
           padding-left: 5px;
           color: $black;
+
+          &:nth-child(1) {
+            display: inline-block;
+          }
         }
 
       }
@@ -2352,6 +2357,7 @@ input, textarea {
 
         .team-card__quote {
           margin-bottom: 27px;
+          max-width: 70%;
         }
       }
 
@@ -2513,6 +2519,8 @@ input, textarea {
       }
 
     }
+
+
 
     &__arrow {
       position: absolute;
