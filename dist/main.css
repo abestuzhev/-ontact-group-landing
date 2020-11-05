@@ -435,7 +435,24 @@ input, textarea {
     font-size: 18px;
     line-height: 25px;
     color: #7CA2BE;
-    top: 5%; }
+    opacity: 0;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out; }
+    .c-schema__res::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 40%;
+      height: 16px;
+      width: 1px;
+      border-right: 1px dashed #000; }
+    .c-schema__res--min {
+      top: auto;
+      bottom: 40%; }
+    .c-schema__res--max {
+      top: 5%;
+      color: #FFA6BB; }
   .c-schema--pink .c-schema__col:nth-child(1) span {
     background-color: #dd46a4; }
   .c-schema--pink .c-schema__col:nth-child(2) span {
@@ -448,6 +465,8 @@ input, textarea {
     background-color: #f790b6; }
   .c-schema--pink .c-schema__col:nth-child(6) span {
     background-color: #fea3bb; }
+  .c-schema--pink .c-schema__res--max {
+    color: #dd46a4; }
   .c-schema--green .c-schema__col:nth-child(1) span {
     background-color: #1ddeb8; }
   .c-schema--green .c-schema__col:nth-child(2) span {
@@ -460,6 +479,8 @@ input, textarea {
     background-color: #31eea0; }
   .c-schema--green .c-schema__col:nth-child(6) span {
     background-color: #35f199; }
+  .c-schema--green .c-schema__res--max {
+    color: #1ddeb8; }
   .c-schema--blue .c-schema__col:nth-child(1) span {
     background-color: #0e83da; }
   .c-schema--blue .c-schema__col:nth-child(2) span {
@@ -472,6 +493,8 @@ input, textarea {
     background-color: #1aaff5; }
   .c-schema--blue .c-schema__col:nth-child(6) span {
     background-color: #1dbafc; }
+  .c-schema--blue .c-schema__res--max {
+    color: #0e83da; }
 
 .swiper-pagination-fraction {
   letter-spacing: 0.05em;
@@ -827,6 +850,12 @@ input, textarea {
 .section-results .results .swiper-container .swiper-slide-active .c-schema__data span {
   -webkit-animation: 1.3s showCol .1s ease;
           animation: 1.3s showCol .1s ease; }
+
+.section-results .results .swiper-container .swiper-slide-active .c-schema__res {
+  opacity: 1;
+  -webkit-transition: all .3s 1s ease-in-out;
+  -o-transition: all .3s 1s ease-in-out;
+  transition: all .3s 1s ease-in-out; }
 
 .section-results .results .swiper-container .swiper-pagination-fraction {
   bottom: 10px; }
@@ -1220,14 +1249,14 @@ input, textarea {
       display: flex;
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row wrap;
-              flex-flow: row wrap;
+          -ms-flex-flow: row nowrap;
+              flex-flow: row nowrap;
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between;
-      -webkit-box-align: stretch;
-          -ms-flex-align: stretch;
-              align-items: stretch; }
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
     .section-cost .cost-navigation {
       display: none;
       -webkit-box-orient: horizontal;
@@ -2574,15 +2603,28 @@ input, textarea {
       -webkit-box-ordinal-group: 2;
           -ms-flex-order: 1;
               order: 1; }
-  .section-cost .cost-navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .section-cost .cost-item {
-    width: 100%;
-    margin-bottom: 20px; }
-  .section-cost .cost-plane-gift__icon {
-    display: block; }
+  .section-cost {
+    overflow: visible; }
+    .section-cost .layout {
+      padding: 0; }
+    .section-cost .cost-item {
+      padding: 13px 42px 20px !important; }
+    .section-cost-decor-1 {
+      top: -40%;
+      z-index: -1; }
+      .section-cost-decor-1 img {
+        width: 100%; }
+    .section-cost-decor-2 {
+      display: none; }
+    .section-cost .cost-navigation {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .section-cost .cost-item {
+      width: 100%;
+      margin-bottom: 20px; }
+    .section-cost .cost-plane-gift__icon {
+      display: block; }
   .section-header .header {
     padding: 12px 0 0; }
   .banner-brand {
@@ -2606,6 +2648,8 @@ input, textarea {
       margin-top: -30px; }
     .section-results .results-card__schema {
       margin-bottom: 24px; }
+  .section-fail .fail-slider-img {
+    width: auto; }
   .section-services .service {
     margin-bottom: 20px; }
     .section-services .service-card__body {
@@ -2827,6 +2871,8 @@ input, textarea {
       margin-bottom: 14px;
       font-size: 34px;
       line-height: 36px; }
+  .section-cost .cost-item {
+    padding: 13px 10px 20px !important; }
   .section-form {
     background: none; } }
 
@@ -2890,6 +2936,11 @@ input, textarea {
     .banner-top .c-btn {
       padding: 14px 19px;
       font-size: 14px; }
+  .section-results .c-schema__res--max {
+    right: 0; }
+    .section-results .c-schema__res--max::after {
+      content: '';
+      left: 75%; }
   .section-services .service-link {
     position: relative;
     padding: 15px 6px;
@@ -3015,6 +3066,8 @@ input, textarea {
     .section-efficiency .efficiency-popup-result-all__num {
       font-size: 14px;
       line-height: 20px; }
+  .section-cost-decor-1 {
+    top: 0; }
   .section-cost .cost-item {
     padding: 0; }
   .section-cost .cost-plane__list {
@@ -3181,6 +3234,8 @@ input, textarea {
     font-weight: normal;
     font-size: 12px;
     line-height: 14px; }
+  .section-cost-decor-1 {
+    top: 35%; }
   .section-cost .cost-plane__list li {
     font-size: 12px;
     line-height: 15px; }
@@ -3202,7 +3257,21 @@ input, textarea {
       line-height: 1.2;
       text-transform: uppercase;
       margin-bottom: 10px;
-      padding: 9px 18px !important; } }
+      padding: 9px 18px !important; }
+  .section-results .results-card__body {
+    padding: 18px 8px; }
+  .section-efficiency .efficiency-schema__text h4 {
+    font-size: 12px;
+    line-height: 16px; }
+  .section-efficiency .efficiency-schema__text span {
+    font-size: 10px;
+    line-height: 15px; }
+  .section-efficiency .efficiency-form__title {
+    text-align: left; }
+  .section-efficiency .efficiency-form-card__text {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500; } }
 
 /*modal-------------------------*/
 .mfp-bg {

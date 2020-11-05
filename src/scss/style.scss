@@ -263,8 +263,6 @@ input, textarea {
 .c-schema {
   position: relative;
 
-
-
   &__title {
     font-weight: normal;
     font-size: 15px;
@@ -331,7 +329,31 @@ input, textarea {
     font-size: 18px;
     line-height: 25px;
     color: #7CA2BE;
-    top: 5%;
+    //top: 5%;
+    opacity: 0;
+    transition: all .2s ease-in-out;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 40%;
+      height: 16px;
+      width: 1px;
+      border-right: 1px dashed #000;
+    }
+
+    &--min {
+      top: auto;
+      bottom: 40%;
+
+    }
+
+    &--max {
+
+      top: 5%;
+      color: #FFA6BB;
+    }
   }
 
   &--pink {
@@ -360,6 +382,10 @@ input, textarea {
       &:nth-child(6) span {
         background-color: #fea3bb;
       }
+    }
+
+    .c-schema__res--max {
+      color: #dd46a4;
     }
 
   }
@@ -391,6 +417,10 @@ input, textarea {
       }
     }
 
+    .c-schema__res--max {
+      color: #1ddeb8;
+    }
+
   }
 
   &--blue {
@@ -420,6 +450,9 @@ input, textarea {
       }
     }
 
+    .c-schema__res--max {
+      color: #0e83da;
+    }
   }
 }
 
@@ -856,6 +889,11 @@ input, textarea {
         .c-schema__data span {
           animation: 1.3s showCol .1s ease;
         }
+
+        .c-schema__res {
+          opacity: 1;
+          transition: all .3s 1s ease-in-out;
+        }
       }
 
       .swiper-pagination-fraction {
@@ -866,7 +904,6 @@ input, textarea {
       .swiper-button-prev:after{
         color: #4D5264;
       }
-
 
     }
 
@@ -1344,15 +1381,15 @@ input, textarea {
 
   .cost {
     position: relative;
-    z-index: 2;    
+    z-index: 2;
     margin: 0 -20px;
     padding: 20px 215px;
 
     &-grid {
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: row nowrap;
       justify-content: space-between;
-      align-items: stretch;
+      align-items: flex-start;
     }
 
     &-navigation {

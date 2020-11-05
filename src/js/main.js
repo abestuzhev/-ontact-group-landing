@@ -147,7 +147,7 @@ function stickyHeader() {
       }
 
   };
-  
+
   //////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////
@@ -157,14 +157,21 @@ function stickyHeader() {
     costSwiper = new Swiper ('.cost .swiper-container', {
 
       loop: false,
-      
-      slidesPerView: 'auto',
+      direction: 'horizontal',
+      autoHeight: true,
 
-      centeredSlides: true,
+      // pagination: {
+      //   el: '.swiper-pagination',
+      //   type: 'fraction',
+      // },
 
-      a11y: true,
-      keyboardControl: true,
-      grabCursor: true,
+      // slidesPerView: 'auto',
+      //
+      // centeredSlides: true,
+      //
+      // a11y: true,
+      // keyboardControl: true,
+      // grabCursor: true,
 
       // pagination
       pagination: '.swiper-pagination',

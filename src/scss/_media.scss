@@ -627,6 +627,29 @@
   }
 
   .section-cost {
+    overflow: visible;
+
+    .layout {
+      padding: 0;
+    }
+
+    .cost-item {
+      padding: 13px 42px 20px !important;
+    }
+
+    &-decor-1 {
+      top: -40%;
+      z-index: -1;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-decor-2 {
+      display: none;
+    }
+
     .cost {
 
       &-grid {
@@ -636,7 +659,7 @@
       &-navigation {
         display: flex;
       }
-      
+
 
       &-item {
         width: 100%;
@@ -703,6 +726,16 @@
     }
   }
 
+  .section-fail {
+    .fail {
+      &-slider {
+        &-img {
+          width: auto;
+        }
+      }
+    }
+  }
+
   .section-services {
     .service {
 
@@ -727,7 +760,6 @@
 
   .section-services {
     .service {
-
 
       &-link {
         padding: 20px 25px;
@@ -1113,6 +1145,14 @@
     }
   }
 
+  .section-cost {
+
+    .cost-item {
+      padding: 13px 10px 20px !important;
+    }
+
+  }
+
   .section-form {
     background: none;
   }
@@ -1244,6 +1284,17 @@
       }
 
       &__head {
+      }
+    }
+  }
+
+  .section-results {
+    .c-schema__res--max {
+      right: 0;
+
+      &::after {
+        content: '';
+        left: 75%;
       }
     }
   }
@@ -1478,7 +1529,14 @@
   }
 
   .section-cost {
+
+    &-decor-1 {
+      top: 0;
+    }
+
     .cost {
+
+
 
       &-item {
         padding: 0;
@@ -1876,6 +1934,12 @@
   }
 
   .section-cost {
+
+    &-decor-1 {
+      top: 35%;
+    }
+
+
     .cost {
       &-plane {
         &__list {
@@ -1920,6 +1984,54 @@
             text-transform: uppercase;
             margin-bottom: 10px;
             padding: 9px 18px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .section-results {
+    .results {
+
+      &-card {
+        &__body {
+          padding: 18px 8px;
+        }
+      }
+
+    }
+  }
+
+
+
+  .section-efficiency {
+
+    .efficiency {
+
+      &-schema {
+        &__text {
+          h4 {
+            font-size: 12px;
+            line-height: 16px;
+          }
+
+          span {
+            font-size: 10px;
+            line-height: 15px;
+          }
+        }
+      }
+
+      &-form {
+        &__title {
+          text-align: left;
+        }
+
+        &-card {
+          &__text {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
           }
         }
       }
