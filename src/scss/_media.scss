@@ -628,7 +628,15 @@
 
   .section-cost {
     .cost {
-      display: block;
+
+      &-grid {
+        // display: block;
+      }
+
+      &-navigation {
+        display: flex;
+      }
+      
 
       &-item {
         width: 100%;
@@ -1484,8 +1492,14 @@
         &__head {
           padding: 13px 18px;
         }
+      }
 
-
+      &-navigation {
+        a {
+          font-size: 11px;
+          line-height: 15px;
+          padding: 5px 8px;
+        }
       }
     }
   }
