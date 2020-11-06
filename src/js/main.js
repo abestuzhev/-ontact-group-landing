@@ -152,6 +152,9 @@ function stickyHeader() {
   //////////////////////////////////////////////////////////////////
   //////////////////////////////////////////////////////////////////
 
+
+  const tariffArr = ['Стандарт', 'Бизнес', 'Максимум']
+
   const enableSwiper = function() {
 
     costSwiper = new Swiper ('.cost .swiper-container', {
@@ -174,8 +177,15 @@ function stickyHeader() {
       // grabCursor: true,
 
       // pagination
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
+
+      
+      pagination: {
+        el: '.cost .swiper-pagination',
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (tariffArr[index]) + '</span>';
+        },
+        clickable: true,
+      },
 
     });
 

@@ -627,7 +627,8 @@
   }
 
   .section-cost {
-    overflow: visible;
+    overflow: visible;    
+    padding: 0 0 60px !important;
 
     .layout {
       padding: 0;
@@ -635,6 +636,11 @@
 
     .cost-item {
       padding: 13px 42px 20px !important;
+    }
+
+    .swiper-pagination {
+      display: flex;
+      padding: 0 42px;
     }
 
     &-decor-1 {
@@ -1151,6 +1157,10 @@
       padding: 13px 10px 20px !important;
     }
 
+    .swiper-pagination {
+      padding: 0 16px;
+    }
+
   }
 
   .section-form {
@@ -1536,6 +1546,16 @@
 
     .cost {
 
+      .swiper-pagination {
+        padding: 0 12px;
+
+        &-bullet {
+          font-size: 11px;
+          line-height: 15px;
+          padding: 5px 10px;
+        }
+      }
+
 
 
       &-item {
@@ -1560,6 +1580,8 @@
         }
       }
     }
+
+    
   }
 
 
