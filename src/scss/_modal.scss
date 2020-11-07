@@ -101,6 +101,31 @@
   animation: 10s background 2s ease infinite;
 }
 
+.standart .c-btn,
+.standart .mfp-content-bg {
+  background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+
+  .c-btn {
+    background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+  }
+}
+
+.business .c-btn,
+.business .mfp-content-bg {
+  background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+
+  .c-btn {
+    background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+  }
+}
+
+.maximum .c-btn,
+.maximum .mfp-content-bg {
+  background: linear-gradient(90.05deg, #DB40A2 0.05%, #FFA6BB 99.96%);
+
+}
+
+
 .white-popup-block {
   background: #FFF;
   padding: 20px 30px;
@@ -176,6 +201,7 @@ html.blocked, body.blocked {
     font-size: 13px;
     &__text {
       font-weight: 300;
+      color: #fff;
     }
   }
 
@@ -184,8 +210,8 @@ html.blocked, body.blocked {
   }
 
   .c-btn {
-    background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
-    box-shadow: 10px 9px 20px rgba(9, 126, 216, 0.22);
+    //background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+    box-shadow: 0px 9px 10px rgba(9, 126, 216, 0.3);
   }
 
 

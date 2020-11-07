@@ -265,6 +265,18 @@
     right: 0;
   }
 
+  .section-audit {
+    .audit {
+      &-list {
+        padding: 0;
+      }
+
+      &-link {
+        padding: 0;
+      }
+    }
+  }
+
   .section-results {
     .results {
       &-card {
@@ -621,13 +633,14 @@
 
         &__img {
           order: 1;
+          margin-bottom: 14px;
         }
       }
     }
   }
 
   .section-cost {
-    overflow: visible;    
+    overflow: visible;
     padding: 0 0 60px !important;
 
     .layout {
@@ -1322,16 +1335,17 @@
         padding: 15px 6px;
         display: block;
 
+
         &:nth-child(1) {
           &::before {
             content: '';
-            background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
+            background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
           }
         }
         &:nth-child(2) {
           &::before {
             content: '';
-            background: linear-gradient(89.7deg, #0D81D8 0.29%, #1EBDFE 99.77%);
+            background: linear-gradient(90deg, #14D6C2 -30.77%, #36F298 100%);
           }
         }
         &:nth-child(3) {
@@ -1455,8 +1469,12 @@
 
   .section-efficiency {
     .efficiency-popup {
-      padding: 20px 18px 30px;
-      border-radius: 30px;
+
+      &.is-visible {
+        padding: 20px 18px 30px;
+        border-radius: 30px;
+      }
+
 
       &-indicators {
         display: block;
@@ -1581,7 +1599,7 @@
       }
     }
 
-    
+
   }
 
 
@@ -1591,6 +1609,11 @@
 @media screen and (max-width:480px) {
   .layout {
     padding: 0 10px;
+  }
+
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: none;
   }
 
   .section-header {
@@ -1605,16 +1628,18 @@
       padding: 18px 0 0;
 
       &-btn {
+        color: #4D5264;
         font-weight: normal;
         text-transform: none;
-        font-size: 12px;
+        font-size: 14px;
         padding: 12px;
       }
 
       &-phone {
         a {
+          color: #4D5264;
           font-weight: normal;
-          font-size: 12px;
+          font-size: 14px;
         }
       }
 
@@ -1656,6 +1681,7 @@
 
 
   .section-cost {
+    padding: 0 0 30px !important;
     .cost {
       padding: 0;
 
@@ -1667,14 +1693,35 @@
         }
       }
     }
+
+    &-decor-1 {
+      top: 30%;
+    }
   }
 
   .banner-top {
-    background-position: 76% 94px;
+    background-position: 75% 51px;
+    background-size: 1379px;
     //background-size: 420%;
     &__title {
       font-size: 20px;
       line-height: 20px;
+      margin-bottom: 17px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+      max-width: 60%;
+    }
+
+    &-advantages {
+      &-card {
+        &__text {
+          font-size: 12px;
+          line-height: 13px;
+        }
+      }
     }
   }
 
@@ -1710,6 +1757,10 @@
         display: block;
         text-align: right;
         color: #4D5264;
+      }
+
+      &-body {
+        background: url(../src/img/cost-elem-mobile.png) 100% 100% no-repeat;
       }
 
       &-title {
@@ -1789,15 +1840,27 @@
           margin-bottom: 10px;
         }
 
+        &__title {
+          text-align: left;
+        }
+
 
         &-card {
+          justify-content: space-between;
           &__input {
             width: 120px;
+          }
+
+          &__text {
+            width: auto;
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 500;
           }
         }
       }
 
-      .c-btn span {
+      .c-btn .c-btn-text span {
         display: none;
       }
     }
@@ -1881,6 +1944,7 @@
         &__title {
           font-size: 14px;
           line-height: 20px;
+          padding: 0px 10px;
         }
 
         &__text {
@@ -1912,6 +1976,14 @@
           letter-spacing: 0.05em;
           color: #4D5264;
         }
+      }
+    }
+  }
+
+  .section-form {
+    &-footer {
+      &__item {
+        margin: 0 0 10px 0;
       }
     }
   }
@@ -2050,11 +2122,7 @@
         }
 
         &-card {
-          &__text {
-            font-size: 12px;
-            line-height: 18px;
-            font-weight: 500;
-          }
+
         }
       }
     }

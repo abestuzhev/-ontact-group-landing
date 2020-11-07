@@ -7,6 +7,7 @@
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_media.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scss/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_modal.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +68,8 @@
       <workItem from="1604421436804" duration="9264000" />
       <workItem from="1604510297728" duration="8873000" />
       <workItem from="1604527727006" duration="1812000" />
-      <workItem from="1604595140996" duration="6095000" />
+      <workItem from="1604595140996" duration="6726000" />
+      <workItem from="1604754719560" duration="11148000" />
     </task>
     <servers />
   </component>

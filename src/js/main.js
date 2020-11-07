@@ -153,7 +153,7 @@ function stickyHeader() {
   //////////////////////////////////////////////////////////////////
 
 
-  const tariffArr = ['Стандарт', 'Бизнес', 'Максимум']
+  const tariffArr = ['Стандарт', 'Бизнес', 'Максимум'];
 
   const enableSwiper = function() {
 
@@ -162,23 +162,6 @@ function stickyHeader() {
       loop: false,
       direction: 'horizontal',
       autoHeight: true,
-
-      // pagination: {
-      //   el: '.swiper-pagination',
-      //   type: 'fraction',
-      // },
-
-      // slidesPerView: 'auto',
-      //
-      // centeredSlides: true,
-      //
-      // a11y: true,
-      // keyboardControl: true,
-      // grabCursor: true,
-
-      // pagination
-
-      
       pagination: {
         el: '.cost .swiper-pagination',
         renderBullet: function (index, className) {
@@ -212,6 +195,22 @@ function stickyHeader() {
 
 $(function () {
 
+  //*************************
+  function changeFailText(){
+    if($(window).width() <= 1000){
+      $('.fail-title').text('Почему интернет-магазины не достигают результатов от продвижения ?');
+    }else {
+      $('.fail-title').text('Многие интернет-магазины не достигают результатов от продвижения');
+    }
+  }
+
+  $(window).resize(function(){
+    changeFailText();
+  });
+  //*************************
+
+
+
   var $html = $('html');
   var $header = $('.header-layout');
   //
@@ -221,6 +220,16 @@ $(function () {
     $(document).on('click', icon, function (e) {
 
       e.preventDefault();
+      const costType = $(this).attr('data-type');
+      const costName = $(this).attr('data-name');
+      console.log('type', costType);
+      console.log('name', costName);
+      if(costType !== ''){
+
+        $(popup).addClass(costType);
+        $(popup).find('.popup-title').text(costName)
+      }
+
       $(popup).addClass('is-visible');
       $('.mfp-bg').addClass('is-visible');
 
@@ -237,15 +246,14 @@ $(function () {
         $header.css({
           'padding-right': widthScroll
         });
-        // $('.mfp-wrap').css({
-        //     'overflow-y':'scroll'
-        // });
-        // console.log('Есть полоса прокрутки');
       } else {
-        // console.log('Нет полосы прокрутки');
       }
     });
   }
+
+
+
+
 
   $(document).on('click', '.js-popup-close', function (e) {
     e.preventDefault();
@@ -277,15 +285,19 @@ $(function () {
   $(document).on('click', '.js-show-efficiency', function (e) {
     e.preventDefault();
     $('.efficiency-popup').toggleClass('is-visible');
+    // $('.efficiency-popup').slideToggle('slow');
   });
 
   $(document).on('click', '.menu-mobile__close', function (e) {
     e.preventDefault();
     $('.menu-mobile').removeClass('is-visible');
   });
+
+
+
   //
   //
-  $('.header-menu__link, .banner-arrow__icon').on('click', function(event) {
+  $('.header-menu__link, .banner-arrow__icon, .header-logo a').on('click', function(event) {
     event.preventDefault();
 
       // Store hash
@@ -299,7 +311,15 @@ $(function () {
         scrollTop: heightHash
 
       }, 800);
+  });
 
+  $('.header-logo a').on('click', function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+
+      scrollTop: $('html').offset().top
+
+    }, 300);
   });
   //
   //

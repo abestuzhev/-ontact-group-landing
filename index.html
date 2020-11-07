@@ -33,12 +33,14 @@
 
 <body>
 <div class="wrapper a-animation">
-  <section class="section-header a-turn a-turn-1">
+  <section class="section-header a-turn a-turn-1" id="header">
     <div class="layout">
       <header class="header">
 
         <div class="header-logo">
+          <a href="#header">
           <img src="./src/img/logo.png" alt="">
+          </a>
           <div class="header-logo__text">Здесь бизнес встречает клиентов!</div>
         </div>
 
@@ -74,7 +76,10 @@
           <div class="banner-top__title a-turn a-turn-3">Эфективное продвижение интернет-магазинов</div>
           <div class="banner-top__text a-turn a-turn-3">Научим ваш сайт продавать много</div>
           <div class="c-btn-layout c-btn-layout--left ">
-            <a href="#" class="c-btn c-btn-big js-show-consultation c-btn--blue">получить консультацию</a>
+            <a href="#" class="c-btn c-btn-big js-show-consultation c-btn--blue">
+              <span class="c-btn-bg"></span>
+              <span class="c-btn-text">получить консультацию</span>
+            </a>
           </div>
         </div>
 
@@ -712,7 +717,12 @@
         <!-- END efficiency-step-->
 
         <div class="c-btn-layout c-btn-layout--center">
-          <a href="#" class="c-btn c-btn-big js-show-efficiency">рассчитать отдачу <span>от продвижения</span></a>
+          <a href="#" class="c-btn c-btn-big js-show-efficiency">
+            <span class="c-btn-bg"></span>
+            <span class="c-btn-text">
+              рассчитать отдачу <span>от продвижения</span>
+            </span>
+          </a>
         </div>
 
         <div class="efficiency-popup">
@@ -816,6 +826,7 @@
       <h3 class="section-title">Стоимость продвижения сайта</h3>
       <div class="cost">
 
+        <div class="swiper-pagination"></div>
         <div class="swiper-container">
             <div class="cost-grid swiper-wrapper">
                 <!-- START cost-item-->
@@ -842,7 +853,11 @@
                     </ul>
 
                     <div class="c-btn-layout c-btn-layout--left">
-                      <a href="#" class="c-btn c-btn-default js-show-consultation">Получить предложение</a>
+                      <a href="#" id="qwe" class="c-btn c-btn-default js-show-consultation"
+                         data-type="standart" data-name="Тариф «Стандарт»">
+                        <span class="c-btn-text">Получить предложение</span>
+                        <span class="c-btn-bg"></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -886,7 +901,10 @@
                     </div>
 
                     <div class="c-btn-layout c-btn-layout--left">
-                      <a href="#" class="c-btn c-btn-default js-show-consultation">Получить предложение</a>
+                      <a href="#" class="c-btn c-btn-default js-show-consultation" data-type="business" data-name="Тариф «Бизнес»">
+                        <span class="c-btn-text">Получить предложение</span>
+                        <span class="c-btn-bg"></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -936,7 +954,10 @@
                     </div>
 
                     <div class="c-btn-layout c-btn-layout--left">
-                      <a href="#" class="c-btn c-btn-default js-show-consultation">Получить предложение</a>
+                      <a href="#" class="c-btn c-btn-default js-show-consultation" data-type="maximum" data-name="Тариф «Максимум»">
+                        <span class="c-btn-text">Получить предложение</span>
+                        <span class="c-btn-bg"></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -945,7 +966,7 @@
             </div>
 
         </div>
-        <div class="swiper-pagination"></div>
+
 
         <!-- <div class="cost-navigation">
           <a href="#standart" class="cost-navigation__link">Стандарт</a>
@@ -1083,7 +1104,7 @@
                 <input type="text" name="name" class="c-input" autocomplete="off" placeholder="Представьтесь, пожалуйста">
               </div>
               <div class="c-form__item">
-                <input type="text" name="phone" class="c-input js-phone-mask" autocomplete="off" placeholder="Ваш телефон">
+                <input type="text" name="phone" class="c-input js-phone-mask" autocomplete="off" placeholder="*Ваш телефон">
               </div>
               <div class="c-form__item">
                 <input type="text" name="site" class="c-input" autocomplete="off" placeholder="Какой сайт анализируем?">
@@ -1091,7 +1112,10 @@
             </div>
             <div class="c-form__footer">
               <div class="c-btn-layout c-btn-layout--center">
-                <a href="#" class="c-btn c-btn-big">Хочу аудит</a>
+                <a href="#" class="c-btn c-btn-big js-show-consultation">
+                  <span class="c-btn-text">Хочу аудит</span>
+                  <span class="c-btn-bg"></span>
+                </a>
               </div>
               <div class="c-form__text">
                 Нажимая кнопку вы даете согласие на обработку и
@@ -1128,7 +1152,10 @@
                 </div>
 
                 <div class="c-btn-layout c-btn-layout--left">
-                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">
+                    <span class="c-btn-text">Получить консультацию</span>
+                    <span class="c-btn-bg"></span>
+                  </a>
                 </div>
               </div>
               <div class="service-card__img">
@@ -1147,7 +1174,10 @@
                   У нас большой опыт в создании сайтов и много клиентов. Мы создавали квизы, лендинги, визитки, магазины и порталы, как с нуля, так и по шаблону, выбранным заказчиком. И мы можем доказать свою квалификацию!                </div>
 
                 <div class="c-btn-layout c-btn-layout--left">
-                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">
+                    <span class="c-btn-text">Получить консультацию</span>
+                    <span class="c-btn-bg"></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1163,7 +1193,10 @@
                   В современном мире очень сложно переоценить рекламу. Именно тогда. когда вас видят на первых страницах в поисковых системах у вас имеется стабильный приток новых покупателейи повышение собственного дохода.                </div>
 
                 <div class="c-btn-layout c-btn-layout--left">
-                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">
+                    <span class="c-btn-text">Получить консультацию</span>
+                    <span class="c-btn-bg"></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1177,7 +1210,11 @@
                   Статистика неумолима: Общий спрос запросов со словом «отзывы», составляет более 42 млн.
                 </div>
                 <div class="c-btn-layout c-btn-layout--left">
-                  <a href="#" class="c-btn c-btn-default js-show-consultation">Получить консультацию</a>
+
+                  <a href="#" class="c-btn c-btn-default js-show-consultation">
+                    <span class="c-btn-text">Получить консультацию</span>
+                    <span class="c-btn-bg"></span>
+                  </a>
                 </div>
               </div>
               <div class="service-card__img">
@@ -1606,10 +1643,10 @@
               <input type="text" name="name" class="c-input" autocomplete="off" placeholder="Представьтесь, пожалуйста">
             </div>
             <div class="c-form__item">
-              <input type="text" name="phone" class="c-input js-phone-mask" autocomplete="off" placeholder="Ваш телефон">
+              <input type="text" name="phone" class="c-input js-phone-mask" autocomplete="off" placeholder="*Ваш телефон">
             </div>
             <div class="c-form__item">
-              <textarea name="question" id="" cols="30" rows="10" class="c-textarea"></textarea>
+              <textarea name="question" id="" cols="30" rows="10" placeholder="Ваш вопрос" class="c-textarea"></textarea>
             </div>
           </div>
           <div class="c-form__footer">
@@ -1621,7 +1658,11 @@
 <!--              <button class="c-btn c-btn-default btn-liquid"><span class="inner">Задать вопрос</span></button>-->
 <!--            </div>-->
             <div class="c-btn-layout c-btn-layout--center">
-              <button class="c-btn c-btn-default "><span class="">Задать вопрос</span></button>
+
+              <button class="c-btn c-btn-default ">
+                <span class="c-btn-text">Задать вопрос</span>
+                <span class="c-btn-bg"></span>
+              </button>
             </div>
           </div>
         </form>
@@ -1686,7 +1727,7 @@
                   <input type="text" name="name" class="c-input" autocomplete="off" placeholder="Представьтесь, пожалуйста">
                 </div>
                 <div class="c-form__item">
-                  <input type="text" name="phone" class="c-input js-phone-mask" autocomplete="off" placeholder="Ваш телефон">
+                  <input type="text" name="phone" class="c-input js-phone-mask" autocomplete="off" placeholder="*Ваш телефон">
                 </div>
               </div>
               <div class="c-form__footer">
